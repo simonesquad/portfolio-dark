@@ -3,8 +3,9 @@ import React from 'react'
 //Components
 import Navigation from '../Navigation';
 import Box from '../common/Box';
+import Cup from '../assets/cup.jpeg';
 
-function Glitches() {
+function Words() {
     return (
         <div>
             <Navigation 
@@ -12,17 +13,18 @@ function Glitches() {
             oneBtnLink='/'
             twoBtnTxt='CV//'
             twoBtnLink='/cv'
-            threeBtnTxt='Words//'
-            threeBtnLink='/words'
+            threeBtnTxt='Glitches//'
+            threeBtnLink='/glitches'
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
             <Box
-            title='Which timeline are we in...'
-            desc='being a digital nomad and crossing into many different realities taught me how to think in completely different ways in approach to my writing and coding...'
+            title=''
+            desc=''
+            mainimg={Cup}
             />
         </div>
     )
 }
 
-export default Glitches
+export default Words

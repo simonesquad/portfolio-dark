@@ -2,7 +2,7 @@ import React from 'react';
 
 //Components
 import Navigation from '../Navigation';
-import Box from '../Box';
+import Box from '../common/Box';
 import Profile from '../assets/stripes.jpeg';
 import MovingTxt from '../MovingTxt';
 

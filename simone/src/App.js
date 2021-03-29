@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //Components
-import CV from './components/CV';
-import Words from './components/Words';
-import Glitches from './components/Glitches';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Dashboard from './components/Dashboard';
+import CV from './CV';
+import Words from './Words';
+import Glitches from './Glitches';
+import Contact from './Contact';
+import Footer from './Footer';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
