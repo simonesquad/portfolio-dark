@@ -36,17 +36,21 @@ const Footer = () => {
     return (
         <StyledFooter>
         <StyledCopyright>
-        <CopyrightIcon size="small"></CopyrightIcon>
+        <CopyrightIcon 
+        size="small">
+        </CopyrightIcon>
         <h4>2021</h4>
         </StyledCopyright>
         <StyledIcons>
             <StyledIcon>
-            <GitHubIcon size="large"></GitHubIcon>
-            <p>simonesquad</p>
+            <GitHubIcon 
+            size="large"
+            href="www.github.com/simonesquad"></GitHubIcon>
+            <p>/simonesquad</p>
             </StyledIcon>
             <StyledIcon>
             <LinkedInIcon size="large"></LinkedInIcon>
-            <p>simoneaballard</p>
+            <p>/simoneaballard</p>
             </StyledIcon>
         </StyledIcons>
         </StyledFooter>

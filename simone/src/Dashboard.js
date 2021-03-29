@@ -1,10 +1,10 @@
 import React from 'react';
 
 //Components
-import Navigation from '../Navigation';
-import Box from '../common/Box';
-import Profile from '../assets/stripes.jpeg';
-import MovingTxt from '../MovingTxt';
+import Navigation from './Navigation';
+import Box from './common/Box';
+import Profile from './assets/stripes.jpeg';
+import MovingTxt from './common/MovingTxt';
 
 
 function Dashboard() {

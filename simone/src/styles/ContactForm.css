@@ -1,0 +1,86 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30vw;
+    height: 65vh;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    margin-top: 4%;
+}
+
+.contents input, textarea{
+    font-family: 'Abel';
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contents input[type="text"],
+.contents input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+::placeholder{
+    color:#fff;
+}
+
+.contents textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: white;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.contents input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 5vh;
+    color: #fff;
+    font-size: 1.2vw;
+    background: #4f4f4f;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.content input[type="submit"]:hover {
+    color: #d69f7e;
+}
+
+* {
+    max-width: 100%;
+}
+
+@media only screen
+
+  and (min-device-width: 375px)
+
+  and (max-device-width: 812px)
+
+  and (-webkit-min-device-pixel-ratio: 3)
+
+  and (orientation: portrait) {
+    
+.contents{
+    height: 60%;
+    }
+}

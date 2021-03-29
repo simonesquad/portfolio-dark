@@ -1,8 +1,8 @@
 import emailjs from "emailjs-com";
 import React from 'react';
-import '../styles/ContactForm.css';
+import './styles/ContactForm.css';
 
-export default function ContactForm({backgroundImg}) {
+export default function ContactForm({ backgroundImg }) {
 
     function sendEmail(e) {
         e.preventDefault();

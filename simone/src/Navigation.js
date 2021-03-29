@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import Button from './common/Button';
 import styled from 'styled-components';
 
 // material-ui

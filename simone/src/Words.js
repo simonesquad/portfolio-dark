@@ -1,9 +1,9 @@
 import React from 'react'
 
 //Components
-import Navigation from '../Navigation';
-import Box from '../common/Box';
-import Cup from '../assets/cup.jpeg';
+import Navigation from './Navigation';
+import Box from './common/Box';
+import Cup from './assets/cup.jpeg';
 
 function Words() {
     return (

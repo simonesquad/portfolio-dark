@@ -1,8 +1,11 @@
-import React from 'react';
-import Navigation from '../Navigation';
+import React, { Component } from 'react';
+import CVS from './document/2021_SB_CV.docx';
+import Navigation from './Navigation';
 
+export default class CV extends Component {
 
-function CV() {
+    render() {
+
     return (
         <div>
          <Navigation 
@@ -10,18 +13,17 @@ function CV() {
             oneBtnLink='/'
             twoBtnTxt='Words//'
             twoBtnLink='/words'
-            threeBtnTxt='Glitches'
+            threeBtnTxt='Glitches//'
             threeBtnLink='/glitches'
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
     
         <div className="cv_container">
-        
-        </div>
-    
+          <a href = {CVS} target = "_blank">Download CV</a>
+      </div>
     </div>
-    )
-}
 
-export default CV
+        );
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 
 //Components
-import Navigation from '../Navigation';
-import Box from '../common/Box';
+import Navigation from './Navigation';
+import Box from './common/Box';
 
 function Glitches() {
     return (

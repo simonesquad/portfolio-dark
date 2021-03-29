@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 //Components
-import Navigation from '../Navigation';
-import ContactForm from '../ContactForm';
+import Navigation from './Navigation';
+import ContactForm from './ContactForm';
 
 const StyledContact = styled.div`
     background-color: black;
