@@ -18,12 +18,10 @@ export default class CV extends Component {
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
-    
         <div className="cv_container">
           <a href = {CVS} target = "_blank">Download CV</a>
       </div>
     </div>
-
         );
     }
 }

@@ -44,13 +44,13 @@ const Footer = () => {
         <StyledIcons>
             <StyledIcon>
             <GitHubIcon 
-            size="large"
-            href="www.github.com/simonesquad"></GitHubIcon>
-            <p>/simonesquad</p>
+            size="large">
+            </GitHubIcon>
+            <a href="www.github.com/simonesquad">/simonesquad</a>
             </StyledIcon>
             <StyledIcon>
             <LinkedInIcon size="large"></LinkedInIcon>
-            <p>/simoneaballard</p>
+            <a href="www.linkedin.com/in/simoneaballard">/simoneaballard</a>
             </StyledIcon>
         </StyledIcons>
         </StyledFooter>
