@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import CVS from './document/2021_SB_CV.docx';
+import CVS from './document/SB_xx21.docx';
 import CV2 from './document/2020_SBallard_CV.pdf';
 import Navigation from './Navigation';
+import './CV.css'
 
 export default class CV extends Component {
 
@@ -20,8 +21,12 @@ export default class CV extends Component {
             fourBtnLink='/contact'
             />
         <div className="cv_container">
-          <a href = {CVS} target = "_blank">Download Software Resume</a>
-          <a href = {CV2} target = "_blank">Download Legacy Resume</a>
+        <button className="cv_buttons">
+          <a href = {CVS} target = "_blank">Software</a>
+        </button>
+        <button className="cv_buttons">
+          <a href = {CV2} target = "_blank">Legacy</a>
+        </button>
       </div>
     </div>
         );
