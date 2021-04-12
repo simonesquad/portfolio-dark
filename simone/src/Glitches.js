@@ -34,7 +34,8 @@ function Glitches() {
             </div>
             <OnePic
             title='This timeline will work fine'
-            desc='>>>being a digital nomad taught me how to think in completely different ways and I carry this approach with me wherever I go...coding and writing are personal forms of freedom'
+            desc='>>>being a digital nomad taught me how to think in completely different ways && I carry this approach with me wherever I go.
+            Coding and writing are personal forms of freedom that have the power to create new worlds and shared experiences.'
             mainimg={DV}
             />
             
