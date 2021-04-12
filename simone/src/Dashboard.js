@@ -3,7 +3,7 @@ import React from 'react';
 //Components
 import Navigation from './Navigation';
 import Box from './common/Box';
-import Profile from './assets/stripes.jpeg';
+import Profile from './assets/no_grey.png';
 
 
 

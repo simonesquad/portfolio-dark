@@ -3,7 +3,7 @@ import React from 'react'
 //Components
 import Navigation from './Navigation';
 import Box from './common/Box';
-import Cup from './assets/cup.jpeg';
+import Face from './assets/face.jpeg';
 
 function Words() {
     return (
@@ -21,7 +21,7 @@ function Words() {
             <Box
             title=''
             desc=''
-            mainimg={Cup}
+            mainimg={Face}
             />
         </div>
     )

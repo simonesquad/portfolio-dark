@@ -18,8 +18,8 @@ const StyledFooter = styled.div`
 `
 const StyledCopyright = styled.div`
     display: flex;
-    margin-left: 3%;
-    margin-top: 3%;
+    margin-left: 1%;
+    margin-top: 7%;
 `
 const StyledIcons = styled.div`
     display: flex; 
@@ -31,19 +31,18 @@ const Footer = () => {
         <StyledFooter>
         <StyledCopyright>
         <CopyrightIcon 
-        size="small">
+            size="small">
         </CopyrightIcon>
-        <h4>2021</h4>
+        <h4>2021 | </h4>
+        <h4> | Simone Ballard</h4>
         </StyledCopyright>
             <div className="footer__buttons">
             <StyledIcons>
             <Link to='/github'>
-            <GitHubIcon 
-                size="large">
-            </GitHubIcon>
+            <GitHubIcon size="large" />
             </Link>
             <Link to='/linkedin'>
-            <LinkedInIcon size="large"></LinkedInIcon>
+            <LinkedInIcon size="large" />
             </Link>
             </StyledIcons>
             </div>

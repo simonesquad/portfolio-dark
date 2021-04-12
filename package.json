@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "react-native-mov-to-mp4": "^0.2.2"
+  }
+}
