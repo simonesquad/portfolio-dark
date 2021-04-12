@@ -1,4 +1,4 @@
-.box{
+.one{
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -9,19 +9,19 @@
     flex-direction: column;
     scroll-snap-align: start;
 }
-.box__text{
+.one__text{
     color: #eff9f0;
     font-size: 2vw;
     padding: 3%;
     width: 70vw;
     text-align: left;
 }
-.box__pics{
+.one__pics{
     display: flex;
     flex-direction: row;
     margin-top: 2%;
     margin-left: 0%;
-    height: 60vh;
-    width: 60vw;
+    height: 80vh;
+    width: 80vw;
     border-radius: 20%;
 }

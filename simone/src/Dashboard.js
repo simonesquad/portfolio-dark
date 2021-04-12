@@ -4,6 +4,8 @@ import React from 'react';
 import Navigation from './Navigation';
 import Box from './common/Box';
 import Profile from './assets/no_grey.png';
+import Water from './assets/water.jpeg';
+import Cup from './assets/cup.jpeg';
 
 
 
@@ -27,6 +29,9 @@ function Dashboard() {
             title='Simone Ballard'
             desc='Code// Writing// Travel//'
             mainimg={Profile}
+            img2={Water}
+            img3={Cup}
+            add_more='Welcome.'
             />
             </div>
         </div>

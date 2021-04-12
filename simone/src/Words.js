@@ -2,7 +2,7 @@ import React from 'react'
 
 //Components
 import Navigation from './Navigation';
-import Box from './common/Box';
+import OnePic from './common/OnePic';
 import Face from './assets/face.jpeg';
 
 function Words() {
@@ -18,7 +18,7 @@ function Words() {
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
-            <Box
+            <OnePic
             title=''
             desc=''
             mainimg={Face}

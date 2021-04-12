@@ -5,7 +5,7 @@ import DV from './assets/dummy_variable.jpg'
 
 //Components
 import Navigation from './Navigation';
-import Box from './common/Box';
+import OnePic from './common/OnePic';
 import MovingTxt from './common/MovingTxt';
 
 function Glitches() {
@@ -32,9 +32,9 @@ function Glitches() {
                 </source>
             </video>
             </div>
-            <Box
+            <OnePic
             title='This timeline will work fine'
-            desc='being a digital nomad taught me how to think in completely different ways and I carry this open-mindedness with me in my approach to creating products...'
+            desc='>>>being a digital nomad taught me how to think in completely different ways and I carry this approach with me wherever I go...coding and writing are personal forms of freedom'
             mainimg={DV}
             />
             
