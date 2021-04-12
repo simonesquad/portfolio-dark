@@ -4,7 +4,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import Box from './common/Box';
 import Profile from './assets/stripes.jpeg';
-import MovingTxt from './common/MovingTxt';
+
 
 
 function Dashboard() {
@@ -29,9 +29,6 @@ function Dashboard() {
             mainimg={Profile}
             />
             </div>
-            <MovingTxt
-            animatedText='we wandered off the edge of the map...'
-            />
         </div>
     )
 }

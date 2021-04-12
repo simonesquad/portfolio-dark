@@ -8,9 +8,8 @@ import styled from 'styled-components';
 const StyledText = styled.p`
   position: relative;
   font-size: 1.3rem;
-  color: black;
-  -webkit-text-stroke: 0.025vw black;
-  /* text-transform: uppercase; */
+  color: white;
+  -webkit-text-stroke: 0.025vw;
   &::before {
     content: attr(data-text);
     position: absolute;
@@ -18,8 +17,8 @@ const StyledText = styled.p`
     left: 0;
     width: 100%;
     height: 100%;
-    color: black;
-    -webkit-text-stroke: 0vw #383d52;
+    /* color: black; */
+    /* -webkit-text-stroke: 0vw #383d52; */
     border-right: 2px solid #eff9f0;
     overflow: hidden;
     animation: animate 6s linear infinite;

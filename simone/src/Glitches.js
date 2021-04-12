@@ -3,6 +3,7 @@ import React from 'react'
 //Components
 import Navigation from './Navigation';
 import Box from './common/Box';
+import MovingTxt from './common/MovingTxt';
 
 function Glitches() {
     return (
@@ -16,6 +17,9 @@ function Glitches() {
             threeBtnLink='/words'
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
+            />
+             <MovingTxt
+            animatedText='we wandered off the edge of the map...'
             />
             <Box
             title='Which timeline are we in...'
