@@ -15,6 +15,10 @@ function App() {
     <div className="App">
   
     <Switch>
+      <Route path='/github' component={() => {
+        window.location.href = 'www.github.com/simonesquad';
+        return null;
+      }}/>
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/glitches' component={Glitches} />
       <Route exact path='/words' component={Words} />

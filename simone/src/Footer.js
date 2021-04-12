@@ -1,10 +1,12 @@
 //one standardized footer per page with social links
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 // import IconButton from '@material-ui/core/IconButton';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import './Footer.css' 
 
 const StyledFooter = styled.div`
     display: flex;
@@ -19,18 +21,10 @@ const StyledCopyright = styled.div`
     margin-left: 3%;
     margin-top: 3%;
 `
-
 const StyledIcons = styled.div`
     display: flex; 
-    flex-direction: column;
-    margin-left: 3%; 
-    margin-top: 3%;
+    flex-direction: row;
 `
-const StyledIcon = styled.div`
-    display: flex;
-    padding-bottom: 7%;
-`
-//paragraph elements temporary until I can figure out how to do external links with icon buttons
 
 const Footer = () => {
     return (
@@ -41,18 +35,18 @@ const Footer = () => {
         </CopyrightIcon>
         <h4>2021</h4>
         </StyledCopyright>
-        <StyledIcons>
-            <StyledIcon>
+            <div className="footer__buttons">
+            <StyledIcons>
+            <Link to='/github'>
             <GitHubIcon 
-            size="large">
+                size="large">
             </GitHubIcon>
-            <a href="www.github.com/simonesquad">/simonesquad</a>
-            </StyledIcon>
-            <StyledIcon>
+            </Link>
+            <Link to='/linkedin'>
             <LinkedInIcon size="large"></LinkedInIcon>
-            <a href="www.linkedin.com/in/simoneaballard">/simoneaballard</a>
-            </StyledIcon>
-        </StyledIcons>
+            </Link>
+            </StyledIcons>
+            </div>
         </StyledFooter>
     )
 }
