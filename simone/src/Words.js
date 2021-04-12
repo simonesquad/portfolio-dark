@@ -20,7 +20,7 @@ function Words() {
             />
             <OnePic
             title=''
-            desc=''
+            desc='Check Out My Latest on Medium @simone-a-ballard'
             mainimg={Face}
             />
         </div>
