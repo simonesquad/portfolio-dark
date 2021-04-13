@@ -10,14 +10,19 @@ const wordsApi = "https://random-words-api.vercel.app/word";
 function Words() {
     const [wordData, setWordData] = useState({});
 
-    useEffect(() => {
-        getWordsWithFetch();
-    }, []);
+    // useEffect(() => {
+    //     getWordsWithFetch();
+    // }, []);
 
-    const getWordsWithFetch = async () => {
-        const response = await fetch(wordsApi);
-        const jsonData = await response.json();
-        setWordData(jsonData);
+    const getWordsWithFetch = () => {
+        fetch(wordsApi)
+        .then (res => { 
+           return res.json()}) 
+        .then(data => {
+            console.log(data)
+            setWordData(data[0])
+        });
+        
     }
 
     return (
@@ -39,9 +44,11 @@ function Words() {
             />
             <div className="word__wrapper">
                 <button onClick={() => getWordsWithFetch()}>Get Word</button>
+               { wordData && <> 
                 <h4>{wordData.word}</h4>
                 <h4>{wordData.definition}</h4>
                 <h4>{wordData.pronunciation}</h4>
+                </> } 
             </div>
         </div>
     )

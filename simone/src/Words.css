@@ -1,6 +1,7 @@
 .word__wrapper {
     height: 20vh;
     width: 100vw;
+    color: #eff9f0;
     background-color: black;
     text-align: center;
     padding-top: 2%;
