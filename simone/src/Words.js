@@ -44,11 +44,13 @@ function Words() {
             />
             <div className="word__wrapper">
                 <button onClick={() => getWordsWithFetch()}>Get Word</button>
+                <div className="word__card">
                { wordData && <> 
-                <h4>{wordData.word}</h4>
-                <h4>{wordData.definition}</h4>
-                <h4>{wordData.pronunciation}</h4>
+                <h4>Word: {wordData.word}</h4>
+                <h4>Definition: {wordData.definition}</h4>
+                <h4>Pronunciation: "{wordData.pronunciation}"</h4>
                 </> } 
+                </div>
             </div>
         </div>
     )
