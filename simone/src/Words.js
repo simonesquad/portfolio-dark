@@ -38,7 +38,7 @@ function Words() {
             mainimg={Face}
             />
             <div className="word__wrapper">
-                <button onClick={getWordsWithFetch}>Get Word</button>
+                <button onClick={() => getWordsWithFetch()}>Get Word</button>
                 <h4>{wordData.word}</h4>
                 <h4>{wordData.definition}</h4>
                 <h4>{wordData.pronunciation}</h4>
