@@ -21,9 +21,13 @@
     flex-direction: row;
     margin-top: 2%;
     margin-left: 0%;
-    height: 60vh;
-    width: 60vw;
+    height: 70vh;
+    width: 70vw;
     border-radius: 20%;
+}
+.box__pics>img{
+    height: 50vh;
+    width: 25vw;
 }
 .box__bottom{
     color: #eff9f0;
