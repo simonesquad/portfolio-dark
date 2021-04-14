@@ -7,7 +7,7 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 .one__text{
     color: #eff9f0;
@@ -16,12 +16,23 @@
     width: 70vw;
     text-align: left;
 }
+.chunk {
+    display: flex;
+    flex-direction: row;
+}
 .one__pics{
     display: flex;
     flex-direction: row;
     margin-top: 2%;
     margin-left: 0%;
-    height: 80vh;
-    width: 80vw;
+    height: 60vh;
+    width: 60vw;
     border-radius: 20%;
+}
+.one__quote{
+    margin-top: 10%;
+    margin-right: 20%;
+    height: 60vh;
+    width: 60vw;
+    color: #eff9f0;
 }

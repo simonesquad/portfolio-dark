@@ -1,7 +1,7 @@
 import React from 'react'
 import myVideo from './assets/stripes.mov';
 import './Glitches.css';
-import DV from './assets/dummy_variable.jpg'
+import DV from './assets/bright.png'
 
 //Components
 import Navigation from './Navigation';
@@ -33,10 +33,11 @@ function Glitches() {
             </video>
             </div>
             <OnePic
-            title='This timeline will work fine'
-            desc='>>>being a digital nomad taught me how to think in completely different ways && I carry this approach with me wherever I go.
-            Coding and writing are personal forms of freedom that have the power to create new worlds and shared experiences.'
+            title='Are we ready for the next level?'
+            desc=''
             mainimg={DV}
+            quote='>>>being a digital nomad taught me how to think in completely different ways && I carry this approach with me wherever I go.
+            Coding and writing are personal forms of freedom that have the power to create new worlds and shared experiences.'
             />
             
 
