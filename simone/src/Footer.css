@@ -1,0 +1,17 @@
+.footer__buttons{
+    height: 5vh;
+    width: 5vw;
+    background-color: black;
+    align-content: center;
+    text-align: center;
+    margin-top: 6.7%;
+    margin-left: 0.7%;
+}
+.footer__buttons>a{
+    color: #eff9f0;
+    text-decoration: none;
+    font-size: 3vw;
+}
+.footer__buttons>a:hover{
+    color: #d69f7e;
+}
