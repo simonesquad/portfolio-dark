@@ -10,7 +10,7 @@ const OnePic = ({title, desc, mainimg, quote}) => {
                 </div>
                 <div className="chunk">
                 <div className="one__pics">
-                <img width="320" height="420"
+                <img width="220" height="420"
                 src={mainimg} alt="main"/>
                 </div> 
                 <div className="one__quote">
