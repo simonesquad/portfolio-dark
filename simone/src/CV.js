@@ -22,10 +22,10 @@ export default class CV extends Component {
             />
         <div className="cv_container">
         <button className="cv_buttons">
-          <a href = {CVS} target = "_blank">Software</a>
+          <a href = {CVS} rel="noreferrer" target = "_blank">Software</a>
         </button>
         <button className="cv_buttons">
-          <a href = {CV2} target = "_blank">Legacy</a>
+          <a href = {CV2} rel="noreferrer" target = "_blank">Legacy</a>
         </button>
       </div>
     </div>
