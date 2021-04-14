@@ -9,11 +9,16 @@ const Box = ({title, desc, mainimg, img2, img3, img4, img5, add_more}) => {
                 <p>{desc}</p>
                 </div>
                 <div className="box__pics">
-                <img src={mainimg} alt="main"/>
-                <img src={img2} alt="secondimg" />
-                <img src={img3} alt="thirdimg" />
-                <img src={img4} alt="fourthimg" />
-                <img src={img5} alt="fifthimg" />
+                <img width="320" height="420" 
+                src={mainimg} alt="main"/>
+                <img width="320" height="420"
+                src={img2} alt="secondimg" />
+                <img width="320" height="420"
+                src={img3} alt="thirdimg" />
+                <img width="320" height="420"
+                src={img4} alt="fourthimg" />
+                <img width="320" height="420"
+                src={img5} alt="fifthimg" />
                 </div>
                 <div className="box__bottom">
                 <p>{add_more}</p>
