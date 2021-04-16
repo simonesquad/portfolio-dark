@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 //Components
 import CV from './CV';
 import Words from './Words';
@@ -11,18 +11,9 @@ import Dashboard from './Dashboard';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
     <div className="App">
-  
     <Switch>
-      <Route path='/linkedin' component={() => {
-        window.location.href = 'www.linkedin.com/in/simoneaballard';
-        return null;
-      }}/>
-      <Route path='/github' component={() => {
-        window.location.href = 'www.github.com/simonesquad';
-        return null;
-      }}/>
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/glitches' component={Glitches} />
       <Route exact path='/words' component={Words} />
@@ -32,7 +23,7 @@ function App() {
 
     <Footer />
     </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
