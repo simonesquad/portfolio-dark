@@ -70,17 +70,24 @@
     max-width: 100%;
 }
 
-@media only screen
-
-  and (min-device-width: 375px)
-
-  and (max-device-width: 812px)
-
-  and (-webkit-min-device-pixel-ratio: 3)
-
-  and (orientation: portrait) {
+@media only screen 
     
-.contents{
-    height: 60%;
+    and (min-device-width: 375px)
+
+    and (orientation: portrait) { 
+        .container{
+            height: 75vh;
+        }
+        .contents{
+            width: 60vw;
+            height: 70vh;
+        }
+        .contents textarea{
+            font-size: 2.5vw;
+        }
+        .contents input[type="text"],
+        .contents input[type="email"],
+        .contents input[type="submit"]{ 
+            font-size: 2.5vw;
+        }
     }
-}

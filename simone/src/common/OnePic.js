@@ -16,7 +16,6 @@ const OnePic = ({title, desc, mainimg, quote}) => {
                 <p>{quote}</p>
                 </div>
                 </div>
-
         </div>
     )
 }
