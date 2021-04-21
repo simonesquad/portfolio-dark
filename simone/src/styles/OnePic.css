@@ -41,3 +41,25 @@
     width: 60vw;
     color: #eff9f0;
 }
+
+@media only screen 
+    
+    and (min-device-width: 375px)
+
+    and (orientation: portrait) {
+        .one{
+            height: 75vh;
+        } 
+        .one__text{
+            font-size: 3vw;
+        }
+        .one__pics>img{
+            height: 60vh;
+            width: 40vw;
+        }
+        .one__quote{
+            font-size: 0.75rem;
+            margin-top: 10%;
+            margin-right: 5%;
+        }
+    }
