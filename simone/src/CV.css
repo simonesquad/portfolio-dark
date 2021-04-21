@@ -32,6 +32,9 @@
     and (min-device-width: 375px)
 
     and (orientation: portrait) { 
+        .cv_container{
+            height: 75vh;
+        }
         .cv_buttons{
             height: 7vh;
             width: 30vw;
