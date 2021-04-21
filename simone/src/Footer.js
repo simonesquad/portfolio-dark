@@ -38,12 +38,12 @@ const Footer = () => {
         </StyledCopyright>
             <div className="footer__buttons">
             <StyledIcons>
-            <Link to={{ pathname: "www.github.com/simonesquad"}} target="_blank">
+            <a href="www.github.com/simonesquad" target="_blank">
             <GitHubIcon size="large" />
-            </Link>
-            <Link to={{ pathname: "www.linkedin.com/in/simoneaballard" }} target="_blank">
+            </a>
+            <a href="www.linkedin.com/in/simoneaballard" target="_blank">
             <LinkedInIcon size="large" />
-            </Link>
+            </a>
             </StyledIcons>
             </div>
         </StyledFooter>
