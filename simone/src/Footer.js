@@ -1,7 +1,5 @@
 //one standardized footer per page with social links
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 // import IconButton from '@material-ui/core/IconButton';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import GitHubIcon from '@material-ui/icons/GitHub';
