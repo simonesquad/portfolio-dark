@@ -11,6 +11,7 @@ import Dashboard from './Dashboard';
 
 function App() {
   return (
+    <>
     <BrowserRouter>
     <div className="App">
     <Switch>
@@ -20,10 +21,10 @@ function App() {
       <Route exact path='/cv' component={CV} />
       <Route exact path='/' component={Dashboard} />
     </Switch>
-
-    <Footer />
     </div>
     </BrowserRouter>
+    <Footer />
+    </>
   );
 }
 

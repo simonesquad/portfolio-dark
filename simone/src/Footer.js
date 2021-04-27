@@ -16,11 +16,11 @@ const Footer = () => {
         <h4> | Simone Ballard</h4>
         </div>
             <div className="footer__icons">
-            <a href="www.github.com/simonesquad" target="_blank">
+            <a rel="noreferrer" href="https://www.github.com/simonesquad" target="_blank">
             <GitHubIcon 
                 fontSize="small" />
             </a>
-            <a href="www.linkedin.com/in/simoneaballard" target="_blank">
+            <a rel="noreferrer" href="https://www.linkedin.com/in/simoneaballard" target="_blank">
             <LinkedInIcon 
                 fontSize="small" />
             </a>
