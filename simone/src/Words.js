@@ -35,7 +35,7 @@ function Words() {
             />
             <OnePic
             title=''
-            desc='Medium: @simone-a-ballard'
+            desc='Experienced in technical writing, editing, and drafting with soundbite, social media, and blogging cred all around. Taking steps into creative non-fiction and whatever else I want to write currently.'
             mainimg={Face}
             quote='
                 "If you can make one heap of all your winnings
@@ -56,6 +56,11 @@ function Words() {
                 Yours is the Earth and everything that’s in it,   
                 And—which is more—you’ll be a Man, my son!" If - Rudyard Kipling'
             />
+            <div className="medium__button">
+                <a rel="noreferrer" href="https://medium.com/@simone-a-ballard" target="_blank">
+                <button className="top_bottom">My Medium</button>
+                </a>
+            </div>
             <div className="word__wrapper">
                 <button onClick={() => getWordsWithFetch()}>Get Word</button>
                 <div className="word__card">

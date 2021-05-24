@@ -1,3 +1,19 @@
+.medium__button{
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+}
+.top_bottom {
+    height: 10vh;
+    width: 25vw;
+    background-color: black;
+    color: #eff9f0;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.top_bottom:hover {
+    color: #d69f7e;
+}
 .word__wrapper {
     height: 30vh;
     width: 100vw;
