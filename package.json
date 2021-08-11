@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.21.1",
-    "react-native-mov-to-mp4": "^0.2.2"
+    "react-native-mov-to-mp4": "^0.2.2",
+    "react-pdf": "^5.3.2"
   }
 }
