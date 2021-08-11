@@ -58,12 +58,10 @@
     height: 5vh;
     color: #eff9f0;
     font-size: 1.2vw;
-    background: #4f4f4f;
+    background: black;
+    border-color: #eff9f0;
     cursor: pointer;
     border-radius: 20px;
-}
-.content input[type="submit"]:hover {
-    color: #d69f7e;
 }
 
 * {
