@@ -1,6 +1,8 @@
 .container{
     height: 100vh;
     width: 100vw;
+    font-family: 'Abel';
+    font-weight: bold;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,8 +23,6 @@
 }
 
 .contents input, textarea{
-    font-family: 'Abel';
-    font-weight: bold;
     color: #eff9f0;
     width: 100%;
     margin-bottom: 20px;
