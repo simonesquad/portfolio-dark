@@ -3,7 +3,6 @@ import Navigation from './Navigation';
 import Button from './common/Button';
 import SCV from './document/simone_ballard.pdf';
 import { Viewer } from '@react-pdf-viewer/core';
-// import Single from "./common/single-page";
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
 import CVS from './document/simone_ballard.pdf';
