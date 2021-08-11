@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Worker } from '@react-pdf-viewer/core';
 //Components
 import CV from './CV';
 import Words from './Words';
@@ -12,6 +13,7 @@ import Dashboard from './Dashboard';
 function App() {
   return (
     <>
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
     <BrowserRouter>
     <div className="App">
     <Switch>
@@ -23,6 +25,7 @@ function App() {
     </Switch>
     </div>
     </BrowserRouter>
+    </Worker>
     <Footer />
     </>
   );
