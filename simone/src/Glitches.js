@@ -37,7 +37,7 @@ function Glitches() {
             desc=''
             mainimg={DV}
             quote='>>>being a digital nomad taught me how to think in completely different ways && I carry this approach with me wherever I go.
-            Coding and writing are personal forms of freedom that have the power to create new worlds and shared experiences.'
+            Coding and writing are personal forms of freedom that have the power to create new worlds and shared experiences. Currently I am focusing on novel formats for creating NFTs, learning smart contract languages, and looking for new outlets for my writing that can be streamlined throughout the noise. Stay tuned!'
             />
             
 
