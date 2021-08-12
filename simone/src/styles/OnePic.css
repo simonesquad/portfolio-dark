@@ -26,19 +26,20 @@
     margin-top: 2%;
     margin-left: 0%;
     height: 60vh;
-    width: 60vw;
+    width: 40vw;
     border-radius: 20%;
 }
 .one__pics>img{
     height: 60vh;
-    width: 25vw;
+    width: 22vw;
 }
 .one__quote{
+    text-align: left;
     margin-top: 6%;
-    margin-right: 20%;
+    margin-right: 10%;
     font-size: 1.25rem;
     height: 60vh;
-    width: 60vw;
+    width: 70vw;
     color: #eff9f0;
 }
 

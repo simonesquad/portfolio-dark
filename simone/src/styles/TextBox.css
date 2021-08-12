@@ -1,0 +1,29 @@
+.textbox{
+    height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+.top__text>h2{
+    margin-top: 10%;
+    padding-bottom: 3%;
+}
+.top__text{
+    text-align: left;
+    color: #eff9f0;
+    width: 59vw;
+    margin-left: 24%;
+    padding-bottom: 2%;
+}
+.bottom__text{
+    text-align: left;
+    color: #eff9f0;
+    width: 59vw;
+    margin-left: 24%;
+    padding-bottom: 2%;
+}

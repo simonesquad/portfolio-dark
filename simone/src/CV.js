@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import CVS from './document/SB_xx21.docx';
-import CV2 from './document/2020_SBallard_CV.pdf';
+import React from 'react';
 import Navigation from './Navigation';
+import Button from './common/Button';
+import SCV from './document/simone_ballard.pdf';
+import { Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
+import CVS from './document/simone_ballard.pdf';
+import CV2 from './document/2020_SBallard_CV.pdf';
 import './CV.css'
 
-export default class CV extends Component {
-
-    render() {
-
+export default function CV() {
     return (
         <div>
          <Navigation 
@@ -20,15 +22,16 @@ export default class CV extends Component {
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
+          {/* <Single pdf={SCV} /> */}
+        <div className="cvs">
+          <Viewer
+            fileUrl={SCV}
+          />
+        </div>
         <div className="cv_container">
-        <button className="cv_buttons">
-          <a href = {CVS} rel="noreferrer" target = "_blank">Software</a>
-        </button>
-        <button className="cv_buttons">
-          <a href = {CV2} rel="noreferrer" target = "_blank">Legacy</a>
-        </button>
+        <Button text="Now" link={CVS} rel="noreferrer" target = "_blank" />
+        <Button text="Then" link={CV2} rel="noreferrer" target = "_blank" />
       </div>
     </div>
         );
     }
-}

@@ -10,5 +10,5 @@ const Button = ({ imp, text, link }) => {
         </div>
     )
 }
-
+ 
 export default Button
