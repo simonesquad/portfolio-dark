@@ -49,18 +49,17 @@
 
     and (orientation: portrait) {
         .one{
-            height: 75vh;
+            height: 70vh;
         } 
         .one__text{
-            font-size: 3vw;
+            font-size: 1.25rem;
         }
         .one__pics>img{
-            height: 60vh;
+            height: 50vh;
             width: 40vw;
         }
         .one__quote{
-            font-size: 0.75rem;
-            margin-top: 10%;
-            margin-right: 5%;
+            font-size: 0.9rem;
+            margin-left: 10%;
         }
     }
