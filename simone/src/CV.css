@@ -18,10 +18,6 @@
 
     and (orientation: portrait) { 
         .cv_container{
-            height: 75vh;
-        }
-        .cv_buttons{
-            height: 7vh;
-            width: 30vw;
+            height: 10vh;
         }
     }
