@@ -7,21 +7,7 @@ import Navigation from './Navigation';
 import OnePic from './common/OnePic';
 import Face from './assets/face.jpeg';
 
-// const wordsApi = "https://random-words-api.vercel.app/word";
-
 function Words() {
-    // const [wordData, setWordData] = useState({});
-
-    // // const getWordsWithFetch = () => {
-    // //     fetch(wordsApi)
-    // //     .then (res => { 
-    // //        return res.json()}) 
-    // //     .then(data => {
-    // //         console.log(data)
-    // //         setWordData(data[0])
-    // //     });
-        
-    // }
 
     return (
         <div>
@@ -67,19 +53,6 @@ function Words() {
                 link="https://medium.com/@simone-a-ballard" rel="noreferrer" target = "_blank"
                 />
             </div>
-           
-            {/* <div className="word__wrapper">
-                <button 
-                text='Click Bait'
-                onClick={() => getWordsWithFetch()}
-                />
-                <div className="word__card">
-               { wordData && <> 
-                <h4>Word: {wordData.word}</h4>
-                <h4>Definition: {wordData.definition}</h4>
-                <h4>Pronunciation: "{wordData.pronunciation}"</h4>
-                </> } 
-                </div> */}
         </div>
     )
 }

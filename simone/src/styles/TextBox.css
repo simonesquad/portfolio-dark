@@ -27,3 +27,21 @@
     margin-left: 24%;
     padding-bottom: 2%;
 }
+
+@media only screen 
+    
+    and (min-device-width: 375px)
+
+    and (orientation: portrait) {
+        .textbox{
+            height: 65vh;
+            font-size: .9rem;
+        } 
+        .top__text{
+            margin-top: 0%;
+            margin-left: 20%;
+        }
+        .bottom__text{
+            margin-left: 20%;
+        }
+    }

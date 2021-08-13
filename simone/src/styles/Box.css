@@ -45,7 +45,7 @@
     and (orientation: portrait) {
 
     .box{
-        height: 75vh;
+        height: 55vh;
     }
     .box__text{
         font-size: 3vw;
