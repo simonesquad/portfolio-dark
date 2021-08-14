@@ -1,6 +1,5 @@
 //one standardized footer per page with social links
 import React from 'react';
-// import IconButton from '@material-ui/core/IconButton';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -12,6 +11,8 @@ const Footer = () => {
         <div className="footer__copyright">
         <CopyrightIcon 
             fontSize="small" />
+        </div>
+        <div className="footer__text">
         <h4>2021 | </h4>
         <h4> | Simone Ballard</h4>
         </div>
