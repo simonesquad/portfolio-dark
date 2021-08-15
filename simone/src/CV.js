@@ -22,7 +22,6 @@ export default function CV() {
             fourBtnTxt='Contact//'
             fourBtnLink='/contact'
             />
-          {/* <Single pdf={SCV} /> */}
         <div className="cvs">
           <Viewer
             fileUrl={SCV}
