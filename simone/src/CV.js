@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation';
 import Button from './common/Button';
-import SCV from './document/simone_ballard.pdf';
+import SCV from './document/S_B_.pdf';
 import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
-import CVS from './document/simone_ballard.pdf';
+import CVS from './document/S_B_.pdf';
 import CV2 from './document/2020_SBallard_CV.pdf';
 import './CV.css'
 
