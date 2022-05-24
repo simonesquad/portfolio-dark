@@ -5,4 +5,4 @@ My personal website.
 #CSS
 #REACT 
 
-Playing around with design features. A blogging section is planned to move away from purely the Medium.com format...currently in the works.
+Update 2022: Will be integrating Chakra-UI design features for better UI experience.
