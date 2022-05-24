@@ -4,10 +4,14 @@ import ButtonLinks from './common/Button';
 import { 
     Flex,
     Button,
-    ButtonGroup
+    ButtonGroup,
+    IconButton,
+    useColorMode
 } from '@chakra-ui/react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt, threeBtnLink, fourBtnTxt, fourBtnLink, fiveBtnTxt, fiveBtnLink }) => {
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Flex 
             color='black'
@@ -54,6 +58,13 @@ const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt,
                 />
             </Button>
         </ButtonGroup>
+        <IconButton 
+            icon={ colorMode === 'light' ? <FaSun /> : <FaMoon />}
+            isRound='true'
+            size='lg'
+            alignSelf='flex-end'
+            onClick={toggleColorMode}
+        />
         </Flex>
     )
 }

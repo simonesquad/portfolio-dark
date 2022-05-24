@@ -16,7 +16,7 @@ function Dashboard() {
     return (
         <div>
             <Navigation 
-            oneBtnTxt='/home'
+            oneBtnTxt='S'
             oneBtnLink='/'
             twoBtnTxt='Credentials'
             twoBtnLink='/cv'
@@ -24,10 +24,8 @@ function Dashboard() {
             threeBtnLink='/words'
             fourBtnTxt='Glitches'
             fourBtnLink='/glitches'
-            fiveBtnTxt='Contact'
+            fiveBtnTxt='>>>'
             fiveBtnLink='/contact'
-            sixBtnTxt='Github'
-            sixBtnLink='https://www.github.com/simonesquad'
             />
             <div className="box__container">
             <Box 
