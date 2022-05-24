@@ -16,16 +16,18 @@ function Dashboard() {
     return (
         <div>
             <Navigation 
-            oneBtnTxt='//'
+            oneBtnTxt='/home'
             oneBtnLink='/'
-            twoBtnTxt='CV//'
+            twoBtnTxt='Credentials'
             twoBtnLink='/cv'
-            threeBtnTxt='Words//'
+            threeBtnTxt='Words'
             threeBtnLink='/words'
-            fourBtnTxt='Glitches//'
+            fourBtnTxt='Glitches'
             fourBtnLink='/glitches'
-            fiveBtnTxt='Contact//'
+            fiveBtnTxt='Contact'
             fiveBtnLink='/contact'
+            sixBtnTxt='Github'
+            sixBtnLink='https://www.github.com/simonesquad'
             />
             <div className="box__container">
             <Box 
