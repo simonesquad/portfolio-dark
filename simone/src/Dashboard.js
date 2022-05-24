@@ -1,7 +1,6 @@
 import React from 'react';
 
 //Components
-import Navigation from './Navigation';
 // import BoxDemo from './common/Box';
 import Profile from './assets/la.jpeg';
 import Water from './assets/water.jpeg';
@@ -25,18 +24,6 @@ import {
 function Dashboard() {
     return (
         <Stack>
-            <Navigation 
-            oneBtnTxt='S'
-            oneBtnLink='/'
-            twoBtnTxt='Credentials'
-            twoBtnLink='/cv'
-            threeBtnTxt='Words'
-            threeBtnLink='/words'
-            fourBtnTxt='Glitches'
-            fourBtnLink='/glitches'
-            fiveBtnTxt='>>>'
-            fiveBtnLink='/contact'
-            />
         <VStack
             w='100%'
             h='75vh'

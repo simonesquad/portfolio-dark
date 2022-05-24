@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from './Navigation';
 import Button from './common/Button';
 import SCV from './document/S_B_.pdf';
 import CVS from './document/S_B_.pdf';
@@ -19,16 +18,6 @@ export default function CV() {
 
     return (
         <div classname="whole_cv_view">
-         <Navigation 
-            oneBtnTxt='//'
-            oneBtnLink='/'
-            twoBtnTxt='Words//'
-            twoBtnLink='/words'
-            threeBtnTxt='Glitches//'
-            threeBtnLink='/glitches'
-            fourBtnTxt='Contact//'
-            fourBtnLink='/contact'
-            />
         <div className="cvs">
           <Viewer
             fileUrl={SCV}

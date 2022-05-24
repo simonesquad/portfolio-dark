@@ -4,23 +4,12 @@ import './Glitches.css';
 import DV from './assets/bright.png'
 
 //Components
-import Navigation from './Navigation';
 import OnePic from './common/OnePic';
 import MovingTxt from './common/MovingTxt';
 
 function Glitches() {
     return (
         <div>
-            <Navigation 
-            oneBtnTxt='//'
-            oneBtnLink='/'
-            twoBtnTxt='CV//'
-            twoBtnLink='/cv'
-            threeBtnTxt='Words//'
-            threeBtnLink='/words'
-            fourBtnTxt='Contact//'
-            fourBtnLink='/contact'
-            />
              <MovingTxt
             animatedText='we wandered off the edge of the map...'
             />

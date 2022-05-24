@@ -7,6 +7,7 @@ import CV from './CV';
 import Words from './Words';
 import Glitches from './Glitches';
 import Contact from './Contact';
+import Navigation from './Navigation';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
 
@@ -14,6 +15,18 @@ import Dashboard from './Dashboard';
 function App() {
   return (
     <>
+    <Navigation 
+            oneBtnTxt='S'
+            oneBtnLink='/'
+            twoBtnTxt='Credentials'
+            twoBtnLink='/cv'
+            threeBtnTxt='Words'
+            threeBtnLink='/words'
+            fourBtnTxt='Glitches'
+            fourBtnLink='/glitches'
+            fiveBtnTxt='>>>'
+            fiveBtnLink='/contact'
+            />
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
     <BrowserRouter>
     <div className="App">
