@@ -60,17 +60,26 @@ function Dashboard() {
         </Grid>
         </VStack>
         <VStack
-            w='100%'
+            w='90%'
             h='55vh'
+            align='right'
         >
-            <Box>
-            <Heading>'The journey has been real...'</Heading>
+            <Box 
+                marginLeft='10vw'
+            >
+            <Box
+                h='8vh'
+            >
+            <Heading>The journey is real:</Heading>
             </Box>
-            <Box>
-                <Text>Over these years I have been on a journey into sustainable tech, software development, crypto, and the power of communication to motivate forces for change. This journey has taken me all over the states and world, and I have learned so much from each place, but more importantly I have learned that we are a global movement. With every stage of the journey I continue to leverage my skills and experience towards addressing some of the major societal challenges of today.</Text>
+            <Box
+                h='25vh'
+                marginLeft='3vw'
+                align='right'
+                lineHeight='tall'
+            >
+                <Text>hello again friends, I find myself entering the new era and decade with a even more determination that a <Heading as='h5' size='lg'>better world is possible.</Heading> I was fortunate enough to receive a world class education both inside and outside of the classroom that was full of breathtaking <Heading as='h6' size='sm'>adventure.</Heading> While I am still an agent for change always fighting for <Heading as='h5' size='md'>greater transparency and individual empowerment,</Heading> I took a long break from my communications and consulting role in climate to dive into full stack web development - which has led me down a very interesting rabbit hole. I am emerging from this epoch with my sharpest set of skills ever: <Heading as='h4' size='lg'>analysis, communications, programming,</Heading> and a wicked sense of humor to get through it all. I sincerely hope we get to work together at some point - <Heading as='h6' size='md'>and thank you for visiting!</Heading></Text>
             </Box>
-            <Box>
-                <Text>I am constantly searching for interesting projects and people who are making waves in their respective fields. Ready to discuss how we can build something fascinating together.</Text>
             </Box>
         </VStack>
 
