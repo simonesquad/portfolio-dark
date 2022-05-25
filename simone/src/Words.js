@@ -1,15 +1,14 @@
 import React from 'react';
 import './Words.css'
-//Components
-import Button from './common/Button';
-import TextBox from './common/TextBox';
-import OnePic from './common/OnePic';
+//Component
 import Face from './assets/face.jpeg';
 
 import {
     Box,
     Heading,
+    Image,
     Text,
+    Spacer,
     Stack,
     HStack,
     VStack
@@ -65,12 +64,36 @@ function Words() {
             </Box>
             </Box>
             </VStack>
-            {/* <OnePic
-            title=''
-            desc='Communication is the key to opening all worlds...'
-            mainimg={Face}
-            quote='I realized early on in my studies and travels that how you communicate an idea is half the value of the idea itself. When I started my career in environmental science, effecitively communicating the facts of climate change was no small task. Since then social media has become a staple of almost every industry and missing the mark on a digital message can be disastrous. Moving into the next decade I have thoroughly honed my dominant writing style and feel confident in my expert level editing and curation abilities. The next phase should be interesting and I look forward to expanding the current repertoire.'
-            /> */}
+
+            <HStack
+                w='90%'
+                h='70vh'
+            >
+            <Box
+                w='30vw'
+                marginLeft='7vw'
+            >
+            <Image 
+                src={Face} 
+                alt='mural'
+                h='50vh'
+                w='18vw'
+                borderRadius='50%'
+                />
+            </Box>
+            <Spacer />
+            <Box
+                w='65vw'
+            >
+                <Box
+                    h='10vh'
+                >
+                <Heading>Language is our key to all the worlds...</Heading>
+                </Box>
+                <Text>I realized early on in my studies and travels that how you communicate an idea is half the value of the idea itself. When I started my career in environmental science, effecitively communicating the facts of climate change was no small task. Since then social media has become a staple of almost every industry and missing the mark on a digital message can be disastrous. Moving into the next decade I have thoroughly honed my dominant writing style and feel confident in my expert level editing and curation abilities. The next phase should be interesting and I look forward to expanding the current repertoire.</Text>
+            </Box>
+            </HStack>
+    
              {/* <div className="medium__button">
                 <Button 
                 text='Click Bait'
