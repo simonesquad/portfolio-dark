@@ -16,7 +16,6 @@ const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt,
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Flex 
-            color='black'
             h='10vh'
             >
         <ButtonGroup 

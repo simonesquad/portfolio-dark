@@ -1,32 +1,52 @@
-//one standardized footer per page with social links
 import React from 'react';
-import CopyrightIcon from '@material-ui/icons/Copyright';
+
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css' 
 
+import {
+    Box,
+    ButtonGroup,
+    IconButton,
+    Flex,
+    Text,
+} from '@chakra-ui/react';
+
 const Footer = () => {
     return (
-        <div className="footer">
-        <div className="footer__copyright">
-        <CopyrightIcon 
-            fontSize="small" />
-        </div>
-        <div className="footer__text">
-        <h4>2021 | </h4>
-        <h4> | Simone Ballard</h4>
-        </div>
-            <div className="footer__icons">
+        <Flex
+            h='10vh'
+        >
+        <Box
+            w='11vw'
+            marginLeft='2vw'
+            marginTop='3.6vh'
+        >
+        <Text>simoneballard.com</Text>
+        </Box>
+        <ButtonGroup 
+            spacing='3'
+            variant='ghost'
+            marginTop='2vh'
+            >
             <a rel="noreferrer" href="https://www.github.com/simonesquad" target="_blank">
-            <GitHubIcon 
-                fontSize="small" />
+            <IconButton 
+            icon={ <GitHubIcon />}
+            isRound='true'
+            size='lg'
+            alignSelf='flex-end'
+            />
             </a>
             <a rel="noreferrer" href="https://www.linkedin.com/in/simoneaballard" target="_blank">
-            <LinkedInIcon 
-                fontSize="small" />
-            </a>
-            </div>
-        </div>
+            <IconButton 
+            icon={ <LinkedInIcon />}
+            isRound='true'
+            size='lg'
+            alignSelf='flex-end'
+            />
+            </a> 
+        </ButtonGroup>
+        </Flex>
     )
 }
 
