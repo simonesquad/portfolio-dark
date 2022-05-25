@@ -5,6 +5,7 @@ import Face from './assets/face.jpeg';
 
 import {
     Box,
+    Button,
     Heading,
     Image,
     Text,
@@ -107,6 +108,25 @@ function Words() {
                 </Box>
             </Box>
             </HStack>
+            <VStack
+                h='40vh'
+                w='50%'
+            >
+                <Box
+                    h='30vh'
+                    marginLeft='7vw'
+                    marginTop='10vh'
+                >
+                <Heading as='h5' size='md'>If you'd like to read some more of my musings on various topics [including crypto], check out my:</Heading> 
+                <Box
+                    marginTop='3vh'
+                >
+                <a rel="noreferrer" href="https://simone-a-ballard.medium.com/" target="_blank">
+                <Button>Medium.</Button>
+                </a>
+                </Box>
+                </Box>
+            </VStack>
     
              {/* <div className="medium__button">
                 <Button 
