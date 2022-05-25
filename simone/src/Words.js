@@ -127,13 +127,6 @@ function Words() {
                 </Box>
                 </Box>
             </VStack>
-    
-             {/* <div className="medium__button">
-                <Button 
-                text='Click Bait'
-                link="https://medium.com/@simone-a-ballard" rel="noreferrer" target = "_blank"
-                />
-            </div> */}
         </Stack>
     )
 }
