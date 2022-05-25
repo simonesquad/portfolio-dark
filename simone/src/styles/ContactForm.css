@@ -1,84 +1,86 @@
-.container{
+/* .container{
     height: 100vh;
     width: 100vw;
-    font-family: 'Abel';
-    font-weight: bold;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-}
+    
+} */
+
 .contents{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 30vw;
-    height: 65vh;
+    width: 35vw;
+    height: 75vh;
     padding: 50px;
     border-radius: 10px;
     box-sizing: border-box;
-    background: rgba(0,0,0,.5);
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
-.contents input, textarea{
-    color: #eff9f0;
+.contents input, textarea {
     width: 100%;
     margin-bottom: 20px;
+    /* color: black; */
 }
 
-.contents input[type="text"],
-.contents input[type="email"] {
+.contents input[name="user_name"],
+.contents input[name="user_email"] {
     border: none;
-    border-bottom: 1px solid #eff9f0;
+    border-bottom: 1px solid black;
     background: transparent;
     outline: none;
     height: 5vh;
-    color: #eff9f0;
+    /* color: #6c5ce7; */
     font-size: 1.2vw;
 }
 
-::placeholder{
-    color:#eff9f0;
-}
+/* ::placeholder{
+    color: black;
+} */
 
 .contents textarea {
     border: none;
-    border-bottom: 1px solid #eff9f0;
+    border-bottom: 1px solid black;
     background: transparent;
     outline: white;
-    color: #eff9f0;
+    /* color: #6c5ce7; */
     font-size: 1.2vw;
+    height: 15vh;
 }
 
 .contents input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 5vh;
-    color: #eff9f0;
-    font-size: 1.2vw;
-    background: black;
-    border-color: #eff9f0;
-    cursor: pointer;
-    border-radius: 20px;
+    height: 7vh;
+    width: 12vw;
+    /* background-color: #778beb; */
+    border-radius: 2%;
+    font-size: 1rem;
 }
+
+.contents input[type="submit"]:hover {
+    opacity: 80%;
+}
+
 
 * {
     max-width: 100%;
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+    
+    and (min-device-width: 375px)
+
+    and (orientation: portrait) { 
         .container{
             height: 75vh;
         }
         .contents{
-            width: 60vw;
+            width: 100%;
             height: 70vh;
+            margin-left: 0%;
         }
         .contents textarea{
             font-size: 2.5vw;
@@ -87,5 +89,10 @@
         .contents input[type="email"],
         .contents input[type="submit"]{ 
             font-size: 2.5vw;
+        }
+
+        .contents > button {
+            height: 6vh;
+            width: 25vw;
         }
     }

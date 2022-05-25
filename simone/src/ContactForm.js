@@ -1,48 +1,81 @@
-import emailjs from "emailjs-com";
-import React from 'react';
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { useHistory } from "react-router-dom";
 import './styles/ContactForm.css';
 
-export default function ContactForm({ backgroundImg }) {
+import {
+    Box,
+    Stack,
+    VStack,
+} from '@chakra-ui/react';
 
-    function sendEmail(e) {
+const ContactForm = () => {
+    const form = useRef();
+    const history = useHistory();
+
+    const handleRoute = () => {
+        history.push("/thankyou")
+      }
+    
+      const sendEmail = (e) => {
         e.preventDefault();
-
-    emailjs.sendForm('service_vgyo99a', 'template_kqymnmk', e.target, 'user_jMWnlaeLAc6VuXUX6i7eh')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
-    }
+    
+        emailjs.sendForm(
+          'service_jqkz3qr', 
+          'template_kqymnmk', 
+          form.current, 
+          'user_jMWnlaeLAc6VuXUX6i7eh')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return(
-        <div>
-            <div className="container" style={{
-                backgroundImage: `url(${backgroundImg})`
-            }}>
-            <form onSubmit={sendEmail}>
-            <div className="contents">
-                <div className="row pt-5 mx-auto">
-                    <div className="col-8 form-group mx-auto">
-                        <input label="Name" type="text" className="form-control" placeholder="Name" name="name" />
-                    </div>
-                    <div className="col-8 form-group mx-auto">
-                        <input label="Email" type="email" className="form-control" placeholder="Email" name="email" />
-                    </div>
-                    <div className="col-8 form-group mx-auto">
-                        <input label="Subject" type="text" className="form-control" placeholder="Subject" name="subject" />
-                    </div>
-                    <div className="col-8 form-group mx-auto">
-                        <textarea label="Message" className="form-control" id="" cols="30" rows="8" placeholder="" name="message"></textarea>
-                    </div>
-                    <div className="col-8 pt-2 mx-auto">
-                        <input label="Submit" type="submit" className="btn btn-info" value="Don't @ Me"></input>
-                        </div>
-                    </div>
-                </div>
-            </form>
+    <Stack>
+        <VStack
+            h='100vh'
+            w='100%'
+            align='center'
+        >
+        <form ref={form} onSubmit={sendEmail}>
+        <div className="contents">
+            <div>
+            <label htmlFor="name">Name:</label>
+            <input 
+            type="text"
+            name="user_name"
+            required
+            />
         </div>
-    </div>
-    )
-}
+        <div>
+            <label htmlFor="email">Email:</label>
+            <input 
+            type="email"
+            name="user_email"
+            required 
+            />
+        </div>
+        <div>
+            <label htmlFor="message">Message:</label>
+            <textarea 
+            name="message"
+            required 
+            />
+        </div>
+        <Box style={{ marginTop: '12%', marginLeft: '27%' }}>
+        <input
+            type="submit" 
+            value="Send"
+            onClick={handleRoute}
+            />
+        </Box>
+        </div>
+        </form>
+        </VStack>
+    </Stack>
+  );
+};
+
+export default ContactForm;

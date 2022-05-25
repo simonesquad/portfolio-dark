@@ -1,25 +1,75 @@
 import React from 'react';
-import Button from './common/Button';
-import styled from 'styled-components';
+import ButtonLinks from './common/Button';
 
-// material-ui
+import { 
+    Flex,
+    Box,
+    Button,
+    ButtonGroup,
+    IconButton,
+    useColorMode,
+    Spacer
+} from '@chakra-ui/react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
-// styled-components
-const StyledNav = styled.nav`
-    display: flex;
-    width: 100%;
-`
 const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt, threeBtnLink, fourBtnTxt, fourBtnLink, fiveBtnTxt, fiveBtnLink }) => {
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
-        <div>
-            <StyledNav>
-            <Button text={oneBtnTxt} link={oneBtnLink} />
-            <Button text={twoBtnTxt} link={twoBtnLink} />
-            <Button text={threeBtnTxt} link={threeBtnLink} />
-            <Button text={fourBtnTxt} link={fourBtnLink} />
-            <Button text={fiveBtnTxt} link={fiveBtnLink} />
-            </StyledNav>
-        </div>
+        <Flex 
+            h='10vh'
+            >
+        <ButtonGroup 
+            spacing='8'
+            variant='ghost'
+            marginTop='2vh'
+            >
+            <Button>
+                <ButtonLinks 
+                    text={oneBtnTxt} 
+                    link={oneBtnLink} 
+                />
+            </Button>
+            <Button>
+                <ButtonLinks 
+                    text={twoBtnTxt} 
+                    link={twoBtnLink} 
+                />
+            </Button>
+            <a rel="noreferrer" href="https://www.github.com/simonesquad" target="_blank">
+            <Button>
+                Github
+            </Button>
+            </a>
+            <Button>
+                <ButtonLinks 
+                    text={threeBtnTxt} 
+                    link={threeBtnLink} 
+                />
+            </Button>
+            <Button>
+                <ButtonLinks 
+                    text={fourBtnTxt} 
+                    link={fourBtnLink} 
+                />
+            </Button>
+            <Button>
+                <ButtonLinks 
+                    text={fiveBtnTxt} 
+                    link={fiveBtnLink} 
+                />
+            </Button>
+        </ButtonGroup>
+        <Spacer />
+        <Box p='3'>
+        <IconButton 
+            icon={ colorMode === 'light' ?  <FaMoon /> : <FaSun color='white' />}
+            isRound='true'
+            size='lg'
+            alignSelf='flex-end'
+            onClick={toggleColorMode}
+        />
+        </Box>
+        </Flex>
     )
 }
 

@@ -1,51 +1,76 @@
 import React from 'react';
 
 //Components
-import Navigation from './Navigation';
-import Box from './common/Box';
-import TextBox from './common/TextBox';
+// import BoxDemo from './common/Box';
 import Profile from './assets/la.jpeg';
 import Water from './assets/water.jpeg';
 import Snow from './assets/snow.jpeg';
 import Summer from './assets/summer.jpeg';
 import Tree from './assets/tree.jpeg';
 
+import {
+    Box,
+    Grid,
+    GridItem,
+    Heading,
+    Image,
+    Stack,
+    Text,
+    VStack
+} from '@chakra-ui/react';
+
 
 
 function Dashboard() {
     return (
-        <div>
-            <Navigation 
-            oneBtnTxt='//'
-            oneBtnLink='/'
-            twoBtnTxt='CV//'
-            twoBtnLink='/cv'
-            threeBtnTxt='Words//'
-            threeBtnLink='/words'
-            fourBtnTxt='Glitches//'
-            fourBtnLink='/glitches'
-            fiveBtnTxt='Contact//'
-            fiveBtnLink='/contact'
-            />
-            <div className="box__container">
+        <Stack>
+        <VStack
+            w='100%'
+            h='75vh'
+        >
+        <Grid templateColumns='repeat(5, 1fr)' gap={1.5}>
+            <GridItem w='100%' h='10'>
+               <Image src={Profile} alt='me' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Water} alt='water' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Snow} alt='snow' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Summer} alt='summer' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Tree} alt='tree' />
+            </GridItem>
+        </Grid>
+        </VStack>
+        <VStack
+            w='90%'
+            h='55vh'
+            align='right'
+        >
             <Box 
-            title='Simone Ballard'
-            desc='Code | Comms | Environment'
-            mainimg={Profile}
-            img2={Water}
-            img3={Tree}
-            img4={Summer}
-            img5={Snow}
-            add_more='' 
-            />
-            <TextBox 
-            title='The journey has been real...'
-            text1='Over these years I have been on a journey into sustainable tech, software development, crypto, and the power of communication to motivate forces for change. This journey has taken me all over the states and world, and I have learned so much from each place, but more importantly I have learned that we are a global movement. With every stage of the journey I continue to leverage my skills and experience towards addressing some of the major societal challenges of today.'
-            text2='I am constantly searching for interesting projects and people who are making waves in their respective fields. Ready to discuss how we can build something fascinating together.'
-            />
-            </div>
+                marginLeft='10vw'
+            >
+            <Box
+                h='8vh'
+            >
+            <Heading>The journey is real:</Heading>
+            </Box>
+            <Box
+                h='25vh'
+                marginLeft='3vw'
+                align='right'
+                lineHeight='tall'
+            >
+                <Text>hello again friends, I find myself entering the new era and decade with a even more determination that a <Heading as='h5' size='lg'>better world is possible.</Heading> I was fortunate enough to receive a world class education both inside and outside of the classroom that was full of breathtaking <Heading as='h6' size='sm'>adventure.</Heading> While I am still an agent for change always fighting for <Heading as='h5' size='md'>greater transparency and individual empowerment,</Heading> I took a long break from my communications and consulting role in climate to dive into full stack web development - which has led me down a very interesting rabbit hole. I am emerging from this epoch with my sharpest set of skills ever: <Heading as='h4' size='lg'>analysis, communications, programming,</Heading> and a wicked sense of humor to get through it all. I sincerely hope we get to work together at some point - <Heading as='h6' size='md'>and thank you for visiting!</Heading></Text>
+            </Box>
+            </Box>
+        </VStack>
 
-        </div>
+        </Stack>
     )
 }
 
