@@ -76,8 +76,8 @@ function Words() {
             <Image 
                 src={Face} 
                 alt='mural'
-                h='50vh'
-                w='18vw'
+                h='55vh'
+                w='20vw'
                 borderRadius='50%'
                 />
             </Box>
@@ -89,8 +89,22 @@ function Words() {
                     h='10vh'
                 >
                 <Heading>Language is our key to all the worlds...</Heading>
+                
                 </Box>
-                <Text>I realized early on in my studies and travels that how you communicate an idea is half the value of the idea itself. When I started my career in environmental science, effecitively communicating the facts of climate change was no small task. Since then social media has become a staple of almost every industry and missing the mark on a digital message can be disastrous. Moving into the next decade I have thoroughly honed my dominant writing style and feel confident in my expert level editing and curation abilities. The next phase should be interesting and I look forward to expanding the current repertoire.</Text>
+
+                <Box
+                    h='40vh'
+                >
+                <Text>I realized early on in my studies and travels that how you communicate an idea is <Text as='b'>half the value of the idea itself.</Text> From working in environmental science during the 2010's, I learned that effecitively communicating the facts of climate change was no small task. <Text as='b'>Facts can easily get diluted or misconstrued in the general narrative behind alterior motives.</Text> None of us realized what a force social media would become for both the good and detriment of society. Coming of age in this era has shaped my approach towards every aspect of my work. Now I can see the good in rapidly communicating and connecting across the globe - especially being remote during a pandemic and needing to still gain information from the international coder community. <Text as='b'>Moving into the next decade I have thoroughly honed my writing style and feel confident in my expert level editing and curation abilities.</Text> While you can still find me on social media and writing articles here and there, I have shifted my focus to my personal projects towards narrative non-fiction stories. I hope you'll join me somewhere on the journey and if you'd like to work together on a project - feel free to reach out.</Text>
+                </Box>
+
+                <Box
+                    h='10vh'
+                >
+                <Heading as='h2' size='lg' noOfLines={1}>Your story is your legacy,
+                </Heading> 
+                <Heading as='h2' size='lg' noOfLines={1}>make it a good one.</Heading>
+                </Box>
             </Box>
             </HStack>
     
