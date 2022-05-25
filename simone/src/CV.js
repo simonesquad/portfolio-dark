@@ -1,30 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import Button from './common/Button';
-import SCV from './document/S_B_.pdf';
 import CVS from './document/S_B_.pdf';
 import CV2 from './document/2020_SBallard_CV.pdf';
 import './CV.css'
-//Viewer component
-import { Viewer } from '@react-pdf-viewer/core';
-// Plugins
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-// Styles for pdf
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 
 export default function CV() {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  // const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
     return (
         <div classname="whole_cv_view">
         <div className="cvs">
-          <Viewer
-            fileUrl={SCV}
-            plugins={[
-              defaultLayoutPluginInstance
-            ]}
-          />
+        <Document file={CVS} onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
         </div>
         <div className="cv_container">
         <Button text="Now>>" link={CVS} rel="noreferrer" target = "_blank" />
