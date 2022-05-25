@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
+import Greeting from './common/Greeting';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
     <Switch>
+      <Route exact path='/thankyou' component={Greeting} />
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/glitches' component={Glitches} />
       <Route exact path='/words' component={Words} />
