@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-// import Button from './common/Button';
+import { pdfjs, Document, Page } from 'react-pdf';
 import CVS from './document/S_B_.pdf';
 import CV2 from './document/2020_SBallard_CV.pdf';
 import './CV.css'
+
 
 import {
   Button,
@@ -13,6 +13,9 @@ import {
   HStack,
   VStack,
 } from '@chakra-ui/react';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 
 
 export default function CV() {
@@ -30,7 +33,10 @@ export default function CV() {
         <VStack
           h='117vh'
         >
-        <Document file={CVS} onLoadSuccess={onDocumentLoadSuccess}>
+        <Document 
+          file={CVS} 
+          onLoadSuccess={onDocumentLoadSuccess}
+          >
         <Page pageNumber={pageNumber} />
         </Document>
         </VStack>
