@@ -91,8 +91,9 @@
             font-size: 2.5vw;
         }
 
-        .contents > button {
-            height: 6vh;
-            width: 25vw;
+        .contents input[type="submit"] {
+            height: 5vh;
+            width: 20vw;
+            margin-left: 9%;
         }
     }

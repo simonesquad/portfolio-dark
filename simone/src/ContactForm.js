@@ -4,10 +4,20 @@ import { useHistory } from "react-router-dom";
 import './styles/ContactForm.css';
 
 import {
+    Button,
     Box,
     Stack,
     VStack,
 } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  })
 
 const ContactForm = () => {
     const form = useRef();
@@ -64,7 +74,10 @@ const ContactForm = () => {
             required 
             />
         </div>
-        <Box style={{ marginTop: '12%', marginLeft: '27%' }}>
+        <Box style={{ 
+            marginTop: '12%', 
+            marginLeft: '27%'
+            }}>
         <input
             type="submit" 
             value="Send"
