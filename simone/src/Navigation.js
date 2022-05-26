@@ -11,15 +11,32 @@ import {
     Spacer
 } from '@chakra-ui/react';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  })
 
 const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt, threeBtnLink, fourBtnTxt, fourBtnLink, fiveBtnTxt, fiveBtnLink }) => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Flex 
             h='10vh'
+            w={{
+                sm: '87%',
+                md: '100%',
+                lg: '100%'
+            }}
             >
         <ButtonGroup 
-            spacing='8'
+            spacing={{
+                sm: '0.1',
+                lg:'8'
+            }}
             variant='ghost'
             marginTop='2vh'
             >
