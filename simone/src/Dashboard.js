@@ -36,7 +36,7 @@ function Dashboard() {
         <VStack
             w='100%'
             h={{
-                sm: '37vh',
+                sm: '34vh',
                 md: '60vh',
                 lg: '75vh'
             }}
@@ -62,7 +62,7 @@ function Dashboard() {
         <VStack
             w='90%'
             h={{
-                sm: '85vh',
+                sm: '94vh',
                 md: '65vh',
                 lg: '60vh'
             }}
