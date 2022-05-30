@@ -6,7 +6,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    opacity: 80%;
+    opacity: 90%;
 }
 
 * {
