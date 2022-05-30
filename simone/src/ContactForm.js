@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 import { useHistory } from "react-router-dom";
@@ -6,11 +6,11 @@ import './styles/ContactForm.css';
 
 import {
     Box,
-    Stack,
     FormErrorMessage,
     FormLabel,
     FormControl,
     Input,
+    Textarea
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -23,11 +23,17 @@ const breakpoints = createBreakpoints({
   })
 
 const ContactForm = () => {
-    const form = useRef();
     const {
+        register,
         handleSubmit,
-        formState: { errors, isSubmitting },
-    } = useForm()
+        watch,
+        errors
+    } = useForm();
+    const message = watch('message') || "";
+    const messageCharsLeft = 1500 - message.length;
+
+    const onSubmit = data => console.log(data);
+
     const history = useHistory();
 
     const handleRoute = () => {
@@ -51,37 +57,54 @@ const ContactForm = () => {
 
     return(
         <form 
-            ref={form} 
-            onSubmit={handleSubmit(sendEmail)}>
+            onSubmit={handleSubmit(onSubmit)}>
             <FormControl isInvalid={errors.name}>
             <Box
                 h='15vh'
             >
             <FormLabel htmlFor="name">Name:</FormLabel>
+            {errors.user_name && errors.user_name.type === "required" && (
+            <div role="alert">Name is required!<br/></div>
+            )}
             <Input 
-            type="text"
-            name="user_name"
-            required
+                type="text"
+                name="user_name"
+                placeholder='Name'
+                maxLength='30'
+                aria-invalid={errors.user_name ? "true" : "false"}
+                ref={register({ required: true })}
             />
             </Box>
             <Box
                 h='15vh'
             >
             <FormLabel htmlFor="email">Email:</FormLabel>
+            {errors.user_email && errors.user_email.type === "required" && (
+            <div role="alert">Email is required!<br/></div>
+            )}
             <Input 
-            type="email"
-            name="user_email"
-            required 
+                type="email"
+                name="user_email"
+                placeholder='Email'
+                maxLength='50'
+                aria-invalid={errors.user_email ? "true" : "false"}
+                ref={register({ required: true })}
             />
             </Box>
             <Box
                 h='15vh'
             >
             <FormLabel htmlFor="message">Message:</FormLabel>
-            <Input 
-            type="message"
-            name="message"
-            required 
+            {errors.user_message && errors.user_message.type === "required" && (
+            <div role="alert">Message is required!<br/></div>
+            )}
+            <Textarea 
+                type="message"
+                name="user_message"
+                placeholder='Write some thoughts...'
+                maxLength='500'
+                aria-invalid={errors.user_message ? "true" : "false"}
+                ref={register({ required: true })}
             />
             </Box>
             <FormErrorMessage>
