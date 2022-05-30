@@ -1,16 +1,16 @@
-import React from "react";
-import { useForm } from 'react-hook-form'
-import emailjs from '@emailjs/browser';
+import React, { useState } from "react";
+// import { useForm } from 'react-hook-form'
+import { send } from 'emailjs-com';
 import { useHistory } from "react-router-dom";
 import './styles/ContactForm.css';
 
 import {
-    Box,
-    FormErrorMessage,
-    FormLabel,
-    FormControl,
-    Input,
-    Textarea
+    // Box,
+    // FormErrorMessage,
+    // FormLabel,
+    // FormControl,
+    // Input,
+    // Textarea
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -23,109 +23,104 @@ const breakpoints = createBreakpoints({
   })
 
 const ContactForm = () => {
-    const {
-        register,
-        handleSubmit,
-        watch,
-        errors
-    } = useForm();
-    const message = watch('message') || "";
-    const messageCharsLeft = 1500 - message.length;
-
-    const onSubmit = data => console.log(data);
-
-    const history = useHistory();
-
-    const handleRoute = () => {
-        history.push("/thankyou")
-      }
-    
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm(
-          'service_jqkz3qr', 
-          'template_kqymnmk', 
-          form.current, 
-          'user_jMWnlaeLAc6VuXUX6i7eh')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
+    const [toSend, setToSend] = useState({
+        user_name: '',
+        user_email: '',
+        message: '',
     });
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        send(
+            'service_jqkz3qr',
+            'template_kqymnmk',
+            toSend,
+            'user_jMWnlaeLAc6VuXUX6i7eh'
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('FAILED...', err);
+        });
+    };
+
+    const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
     return(
-        <form 
-            onSubmit={handleSubmit(onSubmit)}>
-            <FormControl isInvalid={errors.name}>
-            <Box
+        <form onSubmit={onSubmit}>
+            {/* <Box
                 h='15vh'
-            >
-            <FormLabel htmlFor="name">Name:</FormLabel>
-            {errors.user_name && errors.user_name.type === "required" && (
+            > */}
+            {/* <FormLabel htmlFor="name">Name:</FormLabel> */}
+            {/* {errors.user_name && errors.user_name.type === "required" && (
             <div role="alert">Name is required!<br/></div>
-            )}
-            <Input 
-                type="text"
-                name="user_name"
+            )} */}
+            <input 
+                type='text'
+                name='user_name'
                 placeholder='Name'
+                value={toSend.user_name}
+                onChange={handleChange}
                 maxLength='30'
-                aria-invalid={errors.user_name ? "true" : "false"}
-                ref={register({ required: true })}
             />
-            </Box>
+            <br></br>
+            {/* </Box>
             <Box
                 h='15vh'
-            >
-            <FormLabel htmlFor="email">Email:</FormLabel>
-            {errors.user_email && errors.user_email.type === "required" && (
+            > */}
+            {/* <FormLabel htmlFor="email">Email:</FormLabel> */}
+            {/* {errors.user_email && errors.user_email.type === "required" && (
             <div role="alert">Email is required!<br/></div>
-            )}
-            <Input 
-                type="email"
-                name="user_email"
+            )} */}
+            <input 
+                type='email'
+                name='user_email'
                 placeholder='Email'
+                value={toSend.user_email}
+                onChange={handleChange}
                 maxLength='50'
-                aria-invalid={errors.user_email ? "true" : "false"}
-                ref={register({ required: true })}
             />
-            </Box>
+            <br></br>
+            {/* </Box>
             <Box
                 h='15vh'
-            >
-            <FormLabel htmlFor="message">Message:</FormLabel>
-            {errors.user_message && errors.user_message.type === "required" && (
+            > */}
+            {/* <FormLabel htmlFor="message">Message:</FormLabel> */}
+            {/* {errors.message && errors.message.type === "required" && (
             <div role="alert">Message is required!<br/></div>
-            )}
-            <Textarea 
-                type="message"
-                name="user_message"
+            )} */}
+            <textarea 
+                name='message'
                 placeholder='Write some thoughts...'
+                value={toSend.message}
+                onChange={handleChange}
                 maxLength='500'
-                aria-invalid={errors.user_message ? "true" : "false"}
-                ref={register({ required: true })}
             />
-            </Box>
-            <FormErrorMessage>
-            {errors.name && errors.name.message}
-            </FormErrorMessage>
-            </FormControl>
-        <Box
+            <br></br>
+            {/* <p className='message-chars-left'>{messageCharsLeft}</p> */}
+            {/* <br></br> */}
+            {/* </Box> */}
+            {/* <FormErrorMessage> */}
+            {/* {errors.name && errors.name.message} */}
+            {/* </FormErrorMessage> */}
+        {/* <Box
             marginTop='12%' 
             marginLeft={{
                 sm: '22%',
                 md: '40%',
                 lg: '35%'
             }}
-        >
+        > */}
         <input
             type="submit" 
             value="Send"
-            onClick={handleRoute}
+            // onClick={handleRoute}
         >
         </input>
-        </Box>
+        {/* </Box> */}
         </form>
   );
 };
