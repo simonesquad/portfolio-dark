@@ -18,11 +18,22 @@ const breakpoints = createBreakpoints({
 function Contact() {
     return (
         <Stack
-            h='100vh'
+            h={{
+                sm: '80vh',
+                lg: '100vh'
+            }}
             w='100%'
         >
             <Box
-                w='50vw'
+                w={{
+                    sm: '65vw',
+                    lg: '45vw'
+                }}
+                marginLeft={{
+                    sm: '17%',
+                    lg: '27%'
+                }}
+                marginTop='10%'
             >
             <ContactForm
             />

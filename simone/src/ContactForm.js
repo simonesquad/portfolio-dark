@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 import { useHistory } from "react-router-dom";
-// import './styles/ContactForm.css';
+import './styles/ContactForm.css';
 
 import {
     Box,
@@ -11,7 +11,6 @@ import {
     FormLabel,
     FormControl,
     Input,
-    Button
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -53,35 +52,51 @@ const ContactForm = () => {
     return(
         <form onSubmit={handleSubmit(sendEmail)}>
             <FormControl isInvalid={errors.name}>
+            <Box
+                h='15vh'
+            >
             <FormLabel htmlFor="name">Name:</FormLabel>
             <Input 
             type="text"
             name="user_name"
             required
             />
+            </Box>
+            <Box
+                h='15vh'
+            >
             <FormLabel htmlFor="email">Email:</FormLabel>
             <Input 
             type="email"
             name="user_email"
             required 
             />
+            </Box>
+            <Box
+                h='15vh'
+            >
             <FormLabel htmlFor="message">Message:</FormLabel>
             <Input 
             type="message"
             name="message"
             required 
             />
+            </Box>
             <FormErrorMessage>
             {errors.name && errors.name.message}
             </FormErrorMessage>
             </FormControl>
-        <Box style={{ 
-            marginTop: '12%', 
-            marginLeft: '27%'
-            }}>
+        <Box
+            marginTop='12%' 
+            marginLeft={{
+                sm: '22%',
+                md: '40%',
+                lg: '35%'
+            }}
+        >
         <input
             type="submit" 
-            value="send"
+            value="Send"
             onClick={handleRoute}
         >
         </input>
