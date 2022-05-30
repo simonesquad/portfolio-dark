@@ -18,9 +18,10 @@
     "emailjs": "^4.0.0",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^4.0.0",
-    "pdfjs-dist": "^2.6.347",
+    "pdfjs-dist": "^2.2.228",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-hook-form": "^7.31.3",
     "react-icons": "^4.3.1",
     "react-pdf": "^5.7.2",
     "react-router-dom": "^5.2.0",
@@ -32,7 +33,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "webpack serve --mode development"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +53,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.2",
+    "worker-loader": "^3.0.8"
   }
 }

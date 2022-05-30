@@ -1,19 +1,44 @@
 import React from 'react'
-import styled from 'styled-components';
-
-//Components
 import ContactForm from './ContactForm';
 
-const StyledContact = styled.div`
-    background-color: black;
-`
+import {
+    Box,
+    Stack,
+} from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  })
 
 function Contact() {
     return (
-        <StyledContact>
+        <Stack
+            h={{
+                sm: '80vh',
+                lg: '100vh'
+            }}
+            w='100%'
+        >
+            <Box
+                w={{
+                    sm: '65vw',
+                    lg: '45vw'
+                }}
+                marginLeft={{
+                    sm: '17%',
+                    lg: '27%'
+                }}
+                marginTop='10%'
+            >
             <ContactForm
             />
-        </StyledContact>
+            </Box>
+        </Stack>
     )
 }
 

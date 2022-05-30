@@ -1,12 +1,22 @@
 import React from 'react'
-import myVideo from './assets/stripes.mov';
+// import myVideo from './assets/stripes.mov';
 import './Glitches.css';
 
+import First from './assets/first.jpg'
+import Sixth from './assets/sixth.jpg'
+import Third from './assets/third.jpg'
+import Fourth from './assets/fourth.jpg'
+import Fifth from './assets/fifth.jpg'
+
 import {
-    AspectRatio,
+    // AspectRatio,
     Heading,
     HStack,
+    Image,
+    Grid,
+    GridItem,
     Stack,
+    VStack
 } from '@chakra-ui/react';
 
 function Glitches() {
@@ -18,15 +28,43 @@ function Glitches() {
             >
                 <Heading>Are we ready for the next level?</Heading>
             </HStack>
+
+            <VStack
+            w='100%'
+            h={{
+                sm: '60vh',
+                md: '65vh',
+                lg: '75vh'
+            }}
+            >
+            <Grid templateColumns='repeat(5, 1fr)' gap={1.5}>
+            <GridItem w='100%' h='10'>
+               <Image src={First} alt='first' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Third} alt='second' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Fourth} alt='third' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Fifth} alt='fourth' />
+            </GridItem>
+            <GridItem w='100%' h='10'>
+                <Image src={Sixth} alt='sixth' />
+            </GridItem>
+            </Grid>
+
+            </VStack>
         
-            <AspectRatio maxW='360px' ratio={1 / 2}>
+            {/* <AspectRatio maxW='360px' ratio={1 / 2}>
             <video 
             width="420" height="440"
             controls autoPlay loop muted>
                 <source src={myVideo} type="video/mp4">
                 </source>
             </video>
-            </AspectRatio>
+            </AspectRatio> */}
         </Stack>
     )
 }

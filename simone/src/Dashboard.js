@@ -18,6 +18,15 @@ import {
     Text,
     VStack
 } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  })
 
 
 
@@ -26,7 +35,11 @@ function Dashboard() {
         <Stack>
         <VStack
             w='100%'
-            h='75vh'
+            h={{
+                sm: '34vh',
+                md: '60vh',
+                lg: '75vh'
+            }}
         >
         <Grid templateColumns='repeat(5, 1fr)' gap={1.5}>
             <GridItem w='100%' h='10'>
@@ -48,7 +61,11 @@ function Dashboard() {
         </VStack>
         <VStack
             w='90%'
-            h='55vh'
+            h={{
+                sm: '94vh',
+                md: '65vh',
+                lg: '60vh'
+            }}
             align='right'
         >
             <Box 

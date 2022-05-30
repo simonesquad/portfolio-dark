@@ -1,5 +1,4 @@
 import React from 'react';
-
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css' 
@@ -11,6 +10,15 @@ import {
     Flex,
     Text,
 } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
+  })
 
 const Footer = () => {
     return (
@@ -18,14 +26,18 @@ const Footer = () => {
             h='10vh'
         >
         <Box
-            w='11vw'
-            marginLeft='2vw'
+            w={{
+                sm: '30vw',
+                md: '18vw',
+                lg: '14vw',
+            }}
+            marginLeft='3vw'
             marginTop='3.6vh'
         >
         <Text>simoneballard.com</Text>
         </Box>
         <ButtonGroup 
-            spacing='3'
+            spacing='2'
             variant='ghost'
             marginTop='2vh'
             >
