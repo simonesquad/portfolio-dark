@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 import { useHistory } from "react-router-dom";
@@ -23,9 +23,9 @@ const breakpoints = createBreakpoints({
   })
 
 const ContactForm = () => {
+    const form = useRef();
     const {
         handleSubmit,
-        form,
         formState: { errors, isSubmitting },
     } = useForm()
     const history = useHistory();
@@ -34,7 +34,7 @@ const ContactForm = () => {
         history.push("/thankyou")
       }
     
-      const sendEmail = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
     
         emailjs.sendForm(
@@ -46,11 +46,13 @@ const ContactForm = () => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
-        });
+    });
     };
 
     return(
-        <form onSubmit={handleSubmit(sendEmail)}>
+        <form 
+            ref={form} 
+            onSubmit={handleSubmit(sendEmail)}>
             <FormControl isInvalid={errors.name}>
             <Box
                 h='15vh'
