@@ -24,30 +24,22 @@
 .contents input, textarea {
     width: 100%;
     margin-bottom: 20px;
-    /* color: black; */
 }
 
 .contents input[name="user_name"],
 .contents input[name="user_email"] {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; 
     background: transparent;
     outline: none;
     height: 5vh;
-    /* color: #6c5ce7; */
-    font-size: 1.2vw;
 }
-
-/* ::placeholder{
-    color: black;
-} */
 
 .contents textarea {
     border: none;
     border-bottom: 1px solid black;
     background: transparent;
     outline: white;
-    /* color: #6c5ce7; */
     font-size: 1.2vw;
     height: 15vh;
 }
@@ -55,7 +47,6 @@
 .contents input[type="submit"] {
     height: 7vh;
     width: 12vw;
-    /* background-color: #778beb; */
     border-radius: 2%;
     font-size: 1rem;
 }
@@ -63,7 +54,6 @@
 .contents input[type="submit"]:hover {
     opacity: 80%;
 }
-
 
 * {
     max-width: 100%;

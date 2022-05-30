@@ -1,13 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser';
 import { useHistory } from "react-router-dom";
-import './styles/ContactForm.css';
+// import './styles/ContactForm.css';
 
 import {
-    Button,
     Box,
     Stack,
-    VStack,
+    FormErrorMessage,
+    FormLabel,
+    FormControl,
+    Input,
+    Button
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -20,7 +24,11 @@ const breakpoints = createBreakpoints({
   })
 
 const ContactForm = () => {
-    const form = useRef();
+    const {
+        handleSubmit,
+        form,
+        formState: { errors, isSubmitting },
+    } = useForm()
     const history = useHistory();
 
     const handleRoute = () => {
@@ -43,51 +51,42 @@ const ContactForm = () => {
     };
 
     return(
-    <Stack>
-        <VStack
-            h='100vh'
-            w='100%'
-            align='center'
-        >
-        <form ref={form} onSubmit={sendEmail}>
-        <div className="contents">
-            <div>
-            <label htmlFor="name">Name:</label>
-            <input 
+        <form onSubmit={handleSubmit(sendEmail)}>
+            <FormControl isInvalid={errors.name}>
+            <FormLabel htmlFor="name">Name:</FormLabel>
+            <Input 
             type="text"
             name="user_name"
             required
             />
-        </div>
-        <div>
-            <label htmlFor="email">Email:</label>
-            <input 
+            <FormLabel htmlFor="email">Email:</FormLabel>
+            <Input 
             type="email"
             name="user_email"
             required 
             />
-        </div>
-        <div>
-            <label htmlFor="message">Message:</label>
-            <textarea 
+            <FormLabel htmlFor="message">Message:</FormLabel>
+            <Input 
+            type="message"
             name="message"
             required 
             />
-        </div>
+            <FormErrorMessage>
+            {errors.name && errors.name.message}
+            </FormErrorMessage>
+            </FormControl>
         <Box style={{ 
             marginTop: '12%', 
             marginLeft: '27%'
             }}>
         <input
             type="submit" 
-            value="Send"
+            value="send"
             onClick={handleRoute}
-            />
+        >
+        </input>
         </Box>
-        </div>
         </form>
-        </VStack>
-    </Stack>
   );
 };
 
