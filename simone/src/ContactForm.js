@@ -5,12 +5,12 @@ import { useHistory } from "react-router-dom";
 import './styles/ContactForm.css';
 
 import {
-    // Box,
+    Box,
     // FormErrorMessage,
     // FormLabel,
     // FormControl,
-    // Input,
-    // Textarea
+    Input,
+    Textarea
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -23,6 +23,7 @@ const breakpoints = createBreakpoints({
   })
 
 const ContactForm = () => {
+    const history = useHistory();
     const [toSend, setToSend] = useState({
         user_name: '',
         user_email: '',
@@ -39,6 +40,7 @@ const ContactForm = () => {
         )
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
+            history.push("/thankyou")
         })
         .catch((err) => {
             console.log('FAILED...', err);
@@ -49,16 +51,20 @@ const ContactForm = () => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
+    // const handleRoute = () => {
+    //     history.push("/thankyou")
+    //   }
+
     return(
         <form onSubmit={onSubmit}>
-            {/* <Box
+            <Box
                 h='15vh'
-            > */}
+            >
             {/* <FormLabel htmlFor="name">Name:</FormLabel> */}
             {/* {errors.user_name && errors.user_name.type === "required" && (
             <div role="alert">Name is required!<br/></div>
             )} */}
-            <input 
+            <Input 
                 type='text'
                 name='user_name'
                 placeholder='Name'
@@ -67,15 +73,15 @@ const ContactForm = () => {
                 maxLength='30'
             />
             <br></br>
-            {/* </Box>
+            </Box>
             <Box
                 h='15vh'
-            > */}
+            >
             {/* <FormLabel htmlFor="email">Email:</FormLabel> */}
             {/* {errors.user_email && errors.user_email.type === "required" && (
             <div role="alert">Email is required!<br/></div>
             )} */}
-            <input 
+            <Input
                 type='email'
                 name='user_email'
                 placeholder='Email'
@@ -84,15 +90,15 @@ const ContactForm = () => {
                 maxLength='50'
             />
             <br></br>
-            {/* </Box>
+            </Box>
             <Box
                 h='15vh'
-            > */}
+            >
             {/* <FormLabel htmlFor="message">Message:</FormLabel> */}
             {/* {errors.message && errors.message.type === "required" && (
             <div role="alert">Message is required!<br/></div>
             )} */}
-            <textarea 
+            <Textarea
                 name='message'
                 placeholder='Write some thoughts...'
                 value={toSend.message}
@@ -102,25 +108,25 @@ const ContactForm = () => {
             <br></br>
             {/* <p className='message-chars-left'>{messageCharsLeft}</p> */}
             {/* <br></br> */}
-            {/* </Box> */}
+            </Box>
             {/* <FormErrorMessage> */}
             {/* {errors.name && errors.name.message} */}
             {/* </FormErrorMessage> */}
-        {/* <Box
+        <Box
             marginTop='12%' 
             marginLeft={{
                 sm: '22%',
                 md: '40%',
                 lg: '35%'
             }}
-        > */}
+        >
         <input
             type="submit" 
             value="Send"
             // onClick={handleRoute}
         >
         </input>
-        {/* </Box> */}
+        </Box>
         </form>
   );
 };
