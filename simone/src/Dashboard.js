@@ -1,7 +1,6 @@
 import React from 'react';
 
 //Components
-// import BoxDemo from './common/Box';
 import Profile from './assets/la.jpeg';
 import Water from './assets/water.jpeg';
 import Snow from './assets/snow.jpeg';
@@ -27,8 +26,6 @@ const breakpoints = createBreakpoints({
     xl: '80em',
     '2xl': '96em',
   })
-
-
 
 function Dashboard() {
     return (

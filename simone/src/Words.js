@@ -1,5 +1,4 @@
 import React from 'react';
-import './Words.css'
 //Component
 import Face from './assets/face.jpeg';
 
