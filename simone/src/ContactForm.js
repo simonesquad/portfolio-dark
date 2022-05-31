@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { send } from 'emailjs-com';
 import { useHistory } from "react-router-dom";
-import './styles/ContactForm.css';
 
 import {
     Box,
