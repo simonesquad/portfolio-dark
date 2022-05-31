@@ -1,6 +1,4 @@
 import React from 'react'
-// import myVideo from './assets/stripes.mov';
-import './Glitches.css';
 
 import First from './assets/first.jpg'
 import Sixth from './assets/sixth.jpg'
@@ -9,7 +7,6 @@ import Fourth from './assets/fourth.jpg'
 import Fifth from './assets/fifth.jpg'
 
 import {
-    // AspectRatio,
     Heading,
     HStack,
     Image,

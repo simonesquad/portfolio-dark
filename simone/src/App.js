@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Worker } from '@react-pdf-viewer/core';
 //Components
