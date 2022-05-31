@@ -6,6 +6,7 @@ import './styles/ContactForm.css';
 
 import {
     Box,
+    Button,
     // FormErrorMessage,
     // FormLabel,
     // FormControl,
@@ -115,17 +116,24 @@ const ContactForm = () => {
         <Box
             marginTop='12%' 
             marginLeft={{
-                sm: '22%',
-                md: '40%',
+                sm: '27%',
+                md: '31%',
                 lg: '35%'
             }}
         >
-        <input
+        <Button
+            w={{
+                sm: '25vw',
+                md: '21vw',
+                lg: '12vw'
+            }}
+            h='6vh'
             type="submit" 
-            value="Send"
+            // value="Send"
             // onClick={handleRoute}
         >
-        </input>
+            Send
+        </Button>
         </Box>
         </form>
   );

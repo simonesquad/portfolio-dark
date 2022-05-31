@@ -6,7 +6,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    opacity: 90%;
+    background-color: '#2d3436';
 }
 
 * {
@@ -22,5 +22,9 @@ input[type="submit"]:hover {
             height: 6vh;
             width: 24vw;
             margin-left: 8%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: '#2d3436';
         }
     }
