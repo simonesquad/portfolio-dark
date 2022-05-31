@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import { useForm } from 'react-hook-form'
 import { send } from 'emailjs-com';
 import { useHistory } from "react-router-dom";
-import './styles/ContactForm.css';
 
 import {
     Box,
@@ -51,10 +49,6 @@ const ContactForm = () => {
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
-
-    // const handleRoute = () => {
-    //     history.push("/thankyou")
-    //   }
 
     return(
         <form onSubmit={onSubmit}>
@@ -129,8 +123,6 @@ const ContactForm = () => {
             }}
             h='6vh'
             type="submit" 
-            // value="Send"
-            // onClick={handleRoute}
         >
             Send
         </Button>
