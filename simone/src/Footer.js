@@ -37,7 +37,10 @@ const Footer = () => {
         <Text>simoneballard.com</Text>
         </Box>
         <ButtonGroup 
-            spacing='2'
+            spacing={{
+                sm: '1',
+                lg: '2'
+            }}
             variant='ghost'
             marginTop='2vh'
             >
