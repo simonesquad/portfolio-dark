@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from "../src/layout/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Worker } from '@react-pdf-viewer/core';
 //Components
@@ -15,6 +16,9 @@ import Greeting from './common/Greeting';
 function App() {
   return (
     <>
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+    <BrowserRouter>
+    <Layout>
     <Navigation 
             oneBtnTxt='S'
             oneBtnLink='/'
@@ -27,8 +31,6 @@ function App() {
             fiveBtnTxt='>>>'
             fiveBtnLink='/contact'
             />
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-    <BrowserRouter>
     <div className="App">
     <Switch>
       <Route exact path='/thankyou' component={Greeting} />
@@ -39,9 +41,11 @@ function App() {
       <Route exact path='/' component={Dashboard} />
     </Switch>
     </div>
+    <Footer />
+    </Layout>
     </BrowserRouter>
     </Worker>
-    <Footer />
+    
     </>
   );
 }
