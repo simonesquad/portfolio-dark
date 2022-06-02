@@ -5,9 +5,8 @@ import { useHistory } from "react-router-dom";
 import {
     Box,
     Button,
-    // FormErrorMessage,
-    // FormLabel,
-    // FormControl,
+    FormLabel,
+    FormControl,
     Input,
     Textarea
 } from '@chakra-ui/react';
@@ -55,58 +54,48 @@ const ContactForm = () => {
             <Box
                 h='15vh'
             >
-            {/* <FormLabel htmlFor="name">Name:</FormLabel> */}
-            {/* {errors.user_name && errors.user_name.type === "required" && (
-            <div role="alert">Name is required!<br/></div>
-            )} */}
-            <Input 
-                type='text'
-                name='user_name'
-                placeholder='Name'
-                value={toSend.user_name}
-                onChange={handleChange}
-                maxLength='30'
-            />
-            <br></br>
+            <FormControl isRequired>
+                <FormLabel htmlFor='name'>Name</FormLabel>
+                <Input 
+                    type='text'
+                    name='user_name'
+                    placeholder='Jack Kerouac'
+                    value={toSend.user_name}
+                    onChange={handleChange}
+                    maxLength='30'
+                />
+            </FormControl>
             </Box>
             <Box
                 h='15vh'
             >
-            {/* <FormLabel htmlFor="email">Email:</FormLabel> */}
-            {/* {errors.user_email && errors.user_email.type === "required" && (
-            <div role="alert">Email is required!<br/></div>
-            )} */}
-            <Input
-                type='email'
-                name='user_email'
-                placeholder='Email'
-                value={toSend.user_email}
-                onChange={handleChange}
-                maxLength='50'
-            />
-            <br></br>
+                <FormControl isRequired>
+                    <FormLabel htmlFor='email'>Email address</FormLabel>
+                    <Input
+                        type='email'
+                        name='user_email'
+                        placeholder='ballers123@gmail.com'
+                        value={toSend.user_email}
+                        onChange={handleChange}
+                        maxLength='50'
+                    />
+                </FormControl>
             </Box>
             <Box
                 h='15vh'
             >
-            {/* <FormLabel htmlFor="message">Message:</FormLabel> */}
-            {/* {errors.message && errors.message.type === "required" && (
-            <div role="alert">Message is required!<br/></div>
-            )} */}
-            <Textarea
-                name='message'
-                placeholder='Write some thoughts...'
-                value={toSend.message}
-                onChange={handleChange}
-                maxLength='500'
-            />
-            <br></br>
-            {/* <p className='message-chars-left'>{messageCharsLeft}</p> */}
-            {/* <br></br> */}
+                <FormControl isRequired>
+                    <FormLabel htmlFor='message'>Message</FormLabel>
+                    <Textarea
+                        name='message'
+                        placeholder='Write some thoughts...'
+                        value={toSend.message}
+                        onChange={handleChange}
+                        maxLength='500'
+                    />
+            </FormControl>
             </Box>
-            {/* <FormErrorMessage> */}
-            {/* {errors.name && errors.name.message} */}
-            {/* </FormErrorMessage> */}
+            
         <Box
             marginTop='12%' 
             marginLeft={{
