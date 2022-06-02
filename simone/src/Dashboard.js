@@ -34,6 +34,9 @@ function Dashboard() {
                 sm: '75%',
                 lg: '100%'
             }}
+            h={{
+                sm: '220vh'
+            }}
         >
         <VStack
             w='100%'
@@ -62,7 +65,10 @@ function Dashboard() {
         </Grid>
         </VStack>
         <VStack
-            w='90%'
+            w={{
+                sm: '80%',
+                lg: '90%'
+            }}
             h={{
                 sm: '120vh',
                 md: '65vh',
@@ -72,7 +78,7 @@ function Dashboard() {
         >
             <Box 
                 marginLeft={{
-                    sm: '8vw',
+                    sm: '12vw',
                     lg: '10vw'
                 }}
             >
