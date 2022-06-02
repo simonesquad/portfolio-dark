@@ -19,18 +19,18 @@ function Contact() {
     return (
         <Stack
             h={{
-                sm: '80vh',
+                sm: '100vh',
                 lg: '100vh'
             }}
             w='100%'
         >
             <Box
                 w={{
-                    sm: '65vw',
+                    sm: '35vw',
                     lg: '45vw'
                 }}
                 marginLeft={{
-                    sm: '17%',
+                    sm: '25%',
                     lg: '27%'
                 }}
                 marginTop='10%'

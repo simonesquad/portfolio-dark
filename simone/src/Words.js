@@ -40,39 +40,51 @@ function Words() {
                 marginTop='5vh'
             >
             <Box
-                h='17vh'
+                h={{
+                    sm: '23vh',
+                    lg: '17vh'
+                }}
             >
-            <Heading as='h1' size='2xl' noOfLines={1}>"If" - by Rudyard Kipling</Heading>
+            <Heading as='h1' size='2xl'>"If" - by Rudyard Kipling</Heading>
             </Box>
             <Box
-                h='30vh'
+                h={{
+                    sm: '45vh',
+                    lg: '30vh'
+                }}
                 marginLeft='9vw'
             >
-            <Heading as='h1' size='2xl' noOfLines={1}>If you can make one heap of all your winnings</Heading>
-            <Heading as='h2' size='xl' noOfLines={1}>And risk it on one turn of pitch-and-toss,</Heading>
-            <Heading as='h3' size='lg' noOfLines={1}>And lose, and start again at your beginnings</Heading>
-            <Heading as='h4' size='md' noOfLines={1}>And never breathe a word about your loss;</Heading>
+            <Heading as='h1' size='2xl' >If you can make one heap of all your winnings</Heading>
+            <Heading as='h2' size='xl' >And risk it on one turn of pitch-and-toss,</Heading>
+            <Heading as='h3' size='lg' >And lose, and start again at your beginnings</Heading>
+            <Heading as='h4' size='md' >And never breathe a word about your loss;</Heading>
             </Box>
             <Box
-                h='30vh'
+                h={{
+                    sm: '45vh',
+                    lg: '30vh'
+                }}
                 marginLeft='13vw'
             >
-            <Heading as='h3' size='lg' noOfLines={1}>If you can force your heart and nerve and sinew</Heading>
-            <Heading as='h3' size='md' noOfLines={1}>To serve your turn long after they are gone,</Heading>   
-            <Heading as='h3' size='lg' noOfLines={1}>And so hold on when there is nothing in you</Heading>
-            <Heading as='h1' size='xl' noOfLines={1}>Except the Will which says to them: ‘Hold on!’</Heading>
+            <Heading as='h3' size='lg' >If you can force your heart and nerve and sinew</Heading>
+            <Heading as='h3' size='md' >To serve your turn long after they are gone,</Heading>   
+            <Heading as='h3' size='lg' >And so hold on when there is nothing in you</Heading>
+            <Heading as='h1' size='xl' >Except the Will which says to them: ‘Hold on!’</Heading>
             </Box>
             <Box
-                h='30vh'
+                h={{
+                    sm: '50vh',
+                    lg: '30vh'
+                }}
             >
-            <Heading as='h3' size='lg' noOfLines={1}>If you can talk with crowds and keep your virtue,</Heading>   
-            <Heading as='h3' size='md' noOfLines={1}>Or walk with Kings—nor lose the common touch,</Heading>
-            <Heading as='h3' size='md' noOfLines={1}>If neither foes nor loving friends can hurt you,</Heading>
-            <Heading as='h3' size='md' noOfLines={1}>If all men count with you, but none too much;</Heading>
-            <Heading as='h3' size='lg' noOfLines={1}>If you can fill the unforgiving minute</Heading>
-            <Heading as='h2' size='lg' noOfLines={1}>With sixty seconds’ worth of distance run,</Heading>   
-            <Heading as='h1' size='2xl' noOfLines={1}>Yours is the Earth and everything that’s in it,</Heading>   
-            <Heading as='h3' size='lg' noOfLines={1}>And—which is more—you’ll be a Man, my son!"</Heading> 
+            <Heading as='h3' size='lg' >If you can talk with crowds and keep your virtue,</Heading>   
+            <Heading as='h3' size='md' >Or walk with Kings—nor lose the common touch,</Heading>
+            <Heading as='h3' size='md' >If neither foes nor loving friends can hurt you,</Heading>
+            <Heading as='h3' size='md' >If all men count with you, but none too much;</Heading>
+            <Heading as='h3' size='lg' >If you can fill the unforgiving minute</Heading>
+            <Heading as='h2' size='lg' >With sixty seconds’ worth of distance run,</Heading>   
+            <Heading as='h1' size='2xl' >Yours is the Earth and everything that’s in it,</Heading>   
+            <Heading as='h3' size='lg' >And—which is more—you’ll be a Man, my son!"</Heading> 
             </Box>
             </Box>
             </VStack>
@@ -80,7 +92,7 @@ function Words() {
             <HStack
                 w='90%'
                 h={{
-                    sm: '130vh',
+                    sm: '200vh',
                     lg: '70vh'
                 }}
             >
@@ -129,14 +141,14 @@ function Words() {
 
                 <Box
                     h={{
-                        sm: '14vh',
+                        sm: '17vh',
                         md: '12vh',
                         lg:'10vh'
                     }}
                 >
-                <Heading as='h2' size='lg' noOfLines={1}>Your story is your legacy,
+                <Heading as='h2' size='lg' >Your story is your legacy,
                 </Heading> 
-                <Heading as='h2' size='lg' noOfLines={1}>make it a good one.</Heading>
+                <Heading as='h2' size='lg' >make it a good one.</Heading>
                 </Box>
             </Box>
             </HStack>

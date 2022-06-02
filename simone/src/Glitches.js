@@ -29,8 +29,8 @@ function Glitches() {
             <VStack
             w='100%'
             h={{
-                sm: '60vh',
-                md: '65vh',
+                sm: '100vh',
+                md: '85vh',
                 lg: '75vh'
             }}
             >
@@ -53,15 +53,6 @@ function Glitches() {
             </Grid>
 
             </VStack>
-        
-            {/* <AspectRatio maxW='360px' ratio={1 / 2}>
-            <video 
-            width="420" height="440"
-            controls autoPlay loop muted>
-                <source src={myVideo} type="video/mp4">
-                </source>
-            </video>
-            </AspectRatio> */}
         </Stack>
     )
 }

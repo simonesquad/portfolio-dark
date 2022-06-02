@@ -27,14 +27,14 @@ const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt,
         <Flex 
             h='10vh'
             w={{
-                sm: '87%',
+                sm: '70%',
                 md: '100%',
                 lg: '100%'
             }}
             >
         <ButtonGroup 
             spacing={{
-                sm: '0',
+                sm: '1',
                 lg:'8'
             }}
             variant='ghost'

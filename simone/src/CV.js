@@ -31,6 +31,10 @@ export default function CV() {
         >
         <VStack
           h='117vh'
+          w={{
+            sm: '80vw',
+            lg: '100vw'
+          }}
         >
         <Document 
           file={CVS} 
