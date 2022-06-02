@@ -32,10 +32,13 @@ function Dashboard() {
         <Stack
             w={{
                 sm: '75%',
+                md: '100%',
                 lg: '100%'
             }}
             h={{
-                sm: '220vh'
+                sm: '250vh',
+                md: '180vh',
+                lg: '150vh'
             }}
         >
         <VStack
@@ -64,14 +67,21 @@ function Dashboard() {
             </GridItem>
         </Grid>
         </VStack>
+        <Box
+            h={{
+                sm: '15vh',
+                lg: '7vh'
+            }}
+        ></Box>
         <VStack
             w={{
                 sm: '80%',
+                md: '85%',
                 lg: '90%'
             }}
             h={{
                 sm: '120vh',
-                md: '65vh',
+                md: '85vh',
                 lg: '60vh'
             }}
             align='right'
