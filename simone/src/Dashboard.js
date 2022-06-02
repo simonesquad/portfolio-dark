@@ -29,11 +29,13 @@ const breakpoints = createBreakpoints({
 
 function Dashboard() {
     return (
-        <Stack>
+        <Stack
+            w='100%'
+        >
         <VStack
             w='100%'
             h={{
-                sm: '44vh',
+                sm: '65vh',
                 md: '60vh',
                 lg: '75vh'
             }}
@@ -59,7 +61,7 @@ function Dashboard() {
         <VStack
             w='90%'
             h={{
-                sm: '94vh',
+                sm: '120vh',
                 md: '65vh',
                 lg: '60vh'
             }}
@@ -67,7 +69,7 @@ function Dashboard() {
         >
             <Box 
                 marginLeft={{
-                    sm: '5vw',
+                    sm: '8vw',
                     lg: '10vw'
                 }}
             >
