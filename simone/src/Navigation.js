@@ -27,7 +27,7 @@ const Navigation = ({ oneBtnTxt, oneBtnLink, twoBtnTxt, twoBtnLink, threeBtnTxt,
         <Flex 
             h='10vh'
             w={{
-                sm: '75vw',
+                sm: '75%',
                 md: '100%',
                 lg: '100%'
             }}
