@@ -19,7 +19,7 @@ const breakpoints = createBreakpoints({
     '2xl': '96em',
   })
 
-function Horizontal() {
+function Vertical() {
 
     return(
 
@@ -30,7 +30,9 @@ function Horizontal() {
                     lg: '70vh'
                 }}
             >
-            <Box>
+            <Box
+                marginLeft='7vw'
+            >
                 <Box
                     h={{
                         sm: '25vh',
@@ -55,6 +57,7 @@ function Horizontal() {
                 </Box>
                 <Spacer />
                 <Box
+                    h='45vh'
                     w='50vw'
                     marginLeft='15vw'
                     >
@@ -90,4 +93,4 @@ function Horizontal() {
     )
 }
 
-export default Horizontal
+export default Vertical
