@@ -6,7 +6,6 @@ import {
     Box,
     Button,
     Heading,
-    Text,
     Stack,
     VStack,
     useMediaQuery
@@ -29,7 +28,7 @@ function Words() {
             <VStack
             w='90%'
             h={{
-                sm: '140vh',
+                md: '140vh',
                 lg: '130vh'
             }}
             align='right'
@@ -40,7 +39,7 @@ function Words() {
             >
             <Box
                 h={{
-                    sm: '25vh',
+                    md: '20vh',
                     lg: '17vh'
                 }}
             >
@@ -48,15 +47,15 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    sm: '65vh',
+                    md: '40vh',
                     lg: '30vh'
                 }}
                 marginLeft={{
-                    sm: '7vw',
+                    md: '9vw',
                     lg: '9vw'
                 }}
                 marginTop={{
-                    sm: '5vh'
+                    sm: '2vh'
                 }}
             >
             <Heading as='h1' size='2xl' >If you can make one heap of all your winnings</Heading>
@@ -66,15 +65,15 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    sm: '65vh',
+                    md: '40vh',
                     lg: '30vh'
                 }}
                 marginLeft={{
-                    sm: '7vh',
+                    md: '10vw',
                     lg: '13vw'
                 }}
                 marginTop={{
-                    sm: '5vh'
+                    md: '1vh'
                 }}
             >
             <Heading as='h3' size='lg' >If you can force your heart and nerve and sinew</Heading>
@@ -84,14 +83,14 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    sm: '70vh',
+                    md: '50vh',
                     lg: '30vh'
                 }}
                 marginLeft={{
-                    sm: '7vh',
+                    sm: '3vw',
                 }}
                 marginTop={{
-                    sm: '5vh'
+                    sm: '1vh'
                 }}
             >
             <Heading as='h3' size='lg' >If you can talk with crowds and keep your virtue,</Heading>   

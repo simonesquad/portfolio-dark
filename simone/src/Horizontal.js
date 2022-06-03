@@ -26,36 +26,43 @@ function Horizontal() {
         <HStack
                 w='90%'
                 h={{
-                    sm: '200vh',
-                    lg: '70vh'
+                    md: '140vh',
+                    lg: '100vh'
                 }}
             >
             <Box
                 w='30vw'
-                marginLeft='7vw'
+                marginLeft={{
+                    md: '5vw',
+                    lg: '7vw'
+                }}
             >
             <Image 
                 src={Face} 
                 alt='mural'
                 h={{
-                    sm: '30vh',
+                    md: '50vh',
                     lg: '55vh'
                 }}
                 w={{
-                    sm: '25vw',
+                    md: '25vw',
                     lg: '20vw'
                 }}
                 borderRadius='50%'
                 />
             </Box>
+
             <Spacer />
+
             <Box
-                w='65vw'
+                w={{
+                    md: '55vw',
+                    lg: '65vw'
+                }}
             >
                 <Box
                     h={{
-                    sm: '20vh',
-                    md: '15vh',
+                    md: '17vh',
                     lg: '13vh'
                 }}
                 >
