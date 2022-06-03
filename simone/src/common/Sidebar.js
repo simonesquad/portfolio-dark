@@ -28,6 +28,10 @@ import {
             {...rest}
       >
         <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
+        <Box
+            w='50vw'
+        >
+        </Box>
         <CloseButton 
             display={{ base: "flex-end", md: "none" }} 
             onClick={onClose} 
