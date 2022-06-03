@@ -31,6 +31,12 @@ const breakpoints = createBreakpoints({
 function Dashboard() {
     return (
         <Stack>
+        <Box
+            h={{
+                sm: '60vh',
+                lg: '80vh'
+            }}
+        >
         <VStack
             w='100%'
             h={{
@@ -57,15 +63,23 @@ function Dashboard() {
             </GridItem>
         </Grid>
         </VStack>
+        </Box>
+
         <Spacer />
+
+
+        <Box
+            h={{
+                sm: '100vh',
+                lg: '75vh'
+            }}
+        >
         <VStack
             w={{
-                sm: '80%',
                 md: '85%',
                 lg: '90%'
             }}
             h={{
-                sm: '100vh',
                 md: '85vh',
                 lg: '60vh'
             }}
@@ -90,6 +104,7 @@ function Dashboard() {
                 <Text>hello again friends, I find myself entering the new era and decade with a even more determination that a <Heading as='h5' size='lg'>better world is possible.</Heading> I was fortunate enough to receive a world class education both inside and outside of the classroom that was full of breathtaking <Heading as='h6' size='sm'>adventure.</Heading> While I am still an agent for change always fighting for <Heading as='h5' size='md'>greater transparency and individual empowerment,</Heading> I took a long break from my communications and consulting role in climate to dive into full stack web development - which has led me down a very interesting rabbit hole. I am emerging from this epoch with my sharpest set of skills ever: <Heading as='h4' size='lg'>analysis, communications, programming,</Heading> and a wicked sense of humor to get through it all. I sincerely hope we get to work together at some point - <Heading as='h6' size='md'>and thank you for visiting!</Heading></Text>
             </Box>
         </VStack>
+        </Box>
     </Stack>
     )
 }
