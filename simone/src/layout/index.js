@@ -9,10 +9,13 @@ import {
 
 export default function Layout({ children }) {
     
-    const [isMobile] = useMediaQuery('(max-width: 375px)')
+    const [isMobile] = useMediaQuery('(max-width: 828px)')
 
     return (
-        <Box minH="100vh">
+        <Box 
+            minH="100vh"
+            w='100vw'
+            >
             {isMobile ? 
             
             <MobileMenu />
