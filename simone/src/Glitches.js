@@ -23,6 +23,7 @@ function Glitches() {
             h={{
                     sm: '100vh'
                 }}
+            w='100%'
         >
             <HStack
                 h='20vh'

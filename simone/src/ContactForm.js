@@ -99,6 +99,7 @@ const ContactForm = () => {
         <Box
             marginTop='12%' 
             marginLeft={{
+                sm: '29%',
                 md: '31%',
                 lg: '35%'
             }}
