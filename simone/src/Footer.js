@@ -27,6 +27,7 @@ const Footer = () => {
         >
         <Box
             w={{
+                base: '20vw',
                 sm: '30vw',
                 md: '18vw',
                 lg: '14vw',
@@ -38,6 +39,7 @@ const Footer = () => {
         </Box>
         <ButtonGroup 
             spacing={{
+                base: '0',
                 sm: '1',
                 lg: '2'
             }}
