@@ -120,6 +120,7 @@ function Words() {
             >
                 <Box
                     h={{
+                        base: '30vh',
                         md: '40vh',
                         lg:'30vh'
                     }}
