@@ -6,7 +6,6 @@ import Fourth from './assets/fourth.jpg'
 import Fifth from './assets/fifth.jpg'
 
 import {
-    Box,
     Heading,
     HStack,
     Image,
@@ -29,7 +28,7 @@ function Glitches() {
             <VStack
             w='100%'
             h={{
-                base: '100vh',
+                base: '75vh',
                 sm: '100vh',
                 md: '85vh',
                 lg: '75vh'

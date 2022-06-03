@@ -23,9 +23,11 @@ function Contact() {
                     sm: '100vh'
                 }}
                 w={{
+                    base: '70vw',
                     lg: '45vw'
                 }}
                 marginLeft={{
+                    base: '10%',
                     lg: '27%'
                 }}
                 marginTop='10%'
