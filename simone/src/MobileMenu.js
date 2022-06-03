@@ -9,10 +9,10 @@ import {
     useDisclosure,
 } from "@chakra-ui/react";
 
-export default function MobileMenu ({ children }) {
+export default function MobileMenu () {
     const { isOpen, onOpen, onClose } = useDisclosure();
     return (
-        <Box minH="100vh">
+        <Box>
         <Drawer
                 autoFocus={false}
                 isOpen={isOpen}
@@ -33,9 +33,6 @@ export default function MobileMenu ({ children }) {
                 display={{ md: "none"}}
             >
             </Header>
-            <Box ml={{ base: 0, md: 60 }} p="1">
-                {children}
-            </Box>  
         </Box>
     )
 }

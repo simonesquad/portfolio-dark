@@ -3,20 +3,20 @@ import MobileMenu from "../MobileMenu";
 import Footer from "../Footer";
 
 import {
-    useDisclosure,
+    Box,
     useMediaQuery,
 } from "@chakra-ui/react";
 
 export default function Layout({ children }) {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    
     const [isMobile] = useMediaQuery('(max-width: 600px)')
 
     return (
-        <div>
+        <Box minH="100vh">
             {isMobile ? 
             
             <MobileMenu />
-            
+
             : 
 
             <Navigation 
@@ -31,8 +31,10 @@ export default function Layout({ children }) {
             fiveBtnTxt='>>>'
             fiveBtnLink='/contact'
             />}
-
+            <Box ml={{ base: 0, md: 0 }} p="1">
+                {children}
+            </Box>  
             <Footer />
-        </div>
+        </Box>
     );
 }
