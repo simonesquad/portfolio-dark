@@ -1,5 +1,4 @@
 import React from 'react'
-
 import First from './assets/first.jpg'
 import Sixth from './assets/sixth.jpg'
 import Third from './assets/third.jpg'
@@ -18,7 +17,13 @@ import {
 
 function Glitches() {
     return (
-        <Stack>
+        <Stack
+            h={{
+                sm: '100vh',
+                lg: '100vh'
+            }}
+            w='100%'
+        >
             <HStack
                 h='20vh'
                 marginLeft='3vw'
