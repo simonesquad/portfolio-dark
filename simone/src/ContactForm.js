@@ -99,7 +99,7 @@ const ContactForm = () => {
         <Box
             marginTop='12%' 
             marginLeft={{
-                base: '35%',
+                base: '32%',
                 md: '31%',
                 lg: '35%'
             }}
@@ -108,12 +108,12 @@ const ContactForm = () => {
         >
         <Button
             w={{
-                base: '30vw',
+                base: '25vw',
                 md: '21vw',
                 lg: '12vw'
             }}
             h={{
-                base: '8vh',
+                base: '7vh',
                 lg: '6vh'
             }}
             type="submit" 
