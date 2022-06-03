@@ -7,8 +7,6 @@ import CV from './CV';
 import Words from './Words';
 import Glitches from './Glitches';
 import Contact from './Contact';
-import Navigation from './Navigation';
-import Footer from './Footer';
 import Dashboard from './Dashboard';
 import Greeting from './common/Greeting';
 
@@ -19,18 +17,6 @@ function App() {
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
     <BrowserRouter>
     <Layout>
-    <Navigation 
-            oneBtnTxt='S'
-            oneBtnLink='/'
-            twoBtnTxt='Credentials'
-            twoBtnLink='/cv'
-            threeBtnTxt='Words'
-            threeBtnLink='/words'
-            fourBtnTxt='Glitches'
-            fourBtnLink='/glitches'
-            fiveBtnTxt='>>>'
-            fiveBtnLink='/contact'
-            />
     <div className="App">
     <Switch>
       <Route exact path='/thankyou' component={Greeting} />
@@ -41,7 +27,6 @@ function App() {
       <Route exact path='/' component={Dashboard} />
     </Switch>
     </div>
-    <Footer />
     </Layout>
     </BrowserRouter>
     </Worker>

@@ -1,41 +1,38 @@
-import Header from "../common/Header";
-import Sidebar from "../common/Sidebar";
+import Navigation from "../Navigation";
+import MobileMenu from "../MobileMenu";
+import Footer from "../Footer";
 
 import {
-    Box,
-    Drawer,
-    DrawerContent,
     useDisclosure,
+    useMediaQuery,
 } from "@chakra-ui/react";
 
 export default function Layout({ children }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const [isMobile] = useMediaQuery('(max-width: 600px)')
 
     return (
-        <Box minH="100vh">
-            <Drawer
-                autoFocus={false}
-                isOpen={isOpen}
-                placement="left"
-                onClose={onClose}
-                returnFocusOnClose={false}
-                onOverlayClick={onClose}
-                size="full"
-                onOpen={onOpen}
-                display={{ md: "none"}}
-            >
-                <DrawerContent>
-                    <Sidebar onClose={onClose} />
-                </DrawerContent>
-            </Drawer>
-            <Header 
-                onOpen={onOpen}
-                display={{ md: "none"}}
-            >
-            </Header>
-            <Box ml={{ base: 0, md: 60 }} p="1">
-                {children}
-            </Box>  
-        </Box>
+        <div>
+            {isMobile ? 
+            
+            <MobileMenu />
+            
+            : 
+
+            <Navigation 
+            oneBtnTxt='S'
+            oneBtnLink='/'
+            twoBtnTxt='Credentials'
+            twoBtnLink='/cv'
+            threeBtnTxt='Words'
+            threeBtnLink='/words'
+            fourBtnTxt='Glitches'
+            fourBtnLink='/glitches'
+            fiveBtnTxt='>>>'
+            fiveBtnLink='/contact'
+            />}
+
+            <Footer />
+        </div>
     );
 }
