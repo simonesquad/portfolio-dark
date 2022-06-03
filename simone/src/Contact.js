@@ -20,7 +20,7 @@ function Contact() {
         <Stack>
             <Box
                 h={{
-                    base: '65vh',
+                    base: '95vh',
                     sm: '100vh'
                 }}
                 w={{
@@ -31,7 +31,10 @@ function Contact() {
                     base: '15%',
                     lg: '27%'
                 }}
-                marginTop='10%'
+                marginTop={{
+                    base: '15%',
+                    lg: '10%'
+                }}
             >
             <ContactForm
             />
