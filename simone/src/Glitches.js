@@ -28,7 +28,7 @@ function Glitches() {
             <VStack
             w='100%'
             h={{
-                base: '75vh',
+                base: '65vh',
                 sm: '100vh',
                 md: '85vh',
                 lg: '75vh'

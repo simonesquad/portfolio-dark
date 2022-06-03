@@ -20,14 +20,15 @@ function Contact() {
         <Stack>
             <Box
                 h={{
+                    base: '65vh',
                     sm: '100vh'
                 }}
                 w={{
-                    base: '70vw',
+                    base: '65vw',
                     lg: '45vw'
                 }}
                 marginLeft={{
-                    base: '10%',
+                    base: '15%',
                     lg: '27%'
                 }}
                 marginTop='10%'
