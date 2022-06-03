@@ -22,7 +22,6 @@ export default function MobileMenu () {
                 onOverlayClick={onClose}
                 size="full"
                 onOpen={onOpen}
-                display={{ md: "none"}}
             >
                 <DrawerContent>
                     <Sidebar onClose={onClose} />
