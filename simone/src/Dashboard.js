@@ -35,7 +35,7 @@ function Dashboard() {
             h={{
                 base: '25vh',
                 sm: '75vh',
-                md: '100vh',
+                md: '65vh',
                 lg: '75vh'
             }}
         >
@@ -61,33 +61,38 @@ function Dashboard() {
         <VStack
             w={{
                 sm: '100%',
-                md: '85%',
+                md: '100%',
                 lg: '90%'
             }}
             h={{
                 base: '85vh',
-                sm: '70vh',
+                sm: '80vh',
                 md: '95vh',
                 lg: '60vh'
             }}
             align='right'
         >
             <Box 
+                h={{
+                    md: '10vh',
+                    lg: '7vh'
+                }}
                 marginLeft={{
                     sm: '12vw',
-                    md: '11vw',
-                    lg: '10vw'
+                    md: '3vw',
+                    lg: '5vw'
                 }}
             >
             <Heading>The journey is real:</Heading>
             </Box>
             <Box
                 h={{
+
                     lg: '25vh'
                 }}
-                marginLeft={{
-                    md: '4vw',
-                    lg: '3vw'
+                w={{
+                    md: '95vw',
+                    lg: '95vw'
                 }}
                 align='right'
                 lineHeight='tall'

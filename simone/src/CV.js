@@ -32,11 +32,13 @@ export default function CV() {
         <VStack
           h={{
             base: '110vh',
+            md: '120vh',
             lg: '117vh'
           }}
           w={{
-            base: '50vw',
+            base: '70vw',
             sm: '80vw',
+            md: '100vw',
             lg: '100vw'
           }}
         >

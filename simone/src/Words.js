@@ -121,7 +121,7 @@ function Words() {
                 <Box
                     h={{
                         base: '30vh',
-                        md: '40vh',
+                        md: '35vh',
                         lg:'30vh'
                     }}
                     marginLeft='7vw'
