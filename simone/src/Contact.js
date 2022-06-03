@@ -17,13 +17,7 @@ const breakpoints = createBreakpoints({
 
 function Contact() {
     return (
-        <Stack
-            h={{
-                sm: '100vh',
-                lg: '100vh'
-            }}
-            w='100%'
-        >
+        <Stack>
             <Box
                 h={{
                     sm: '100vh'

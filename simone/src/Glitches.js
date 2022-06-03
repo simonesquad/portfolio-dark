@@ -6,6 +6,7 @@ import Fourth from './assets/fourth.jpg'
 import Fifth from './assets/fifth.jpg'
 
 import {
+    Box,
     Heading,
     HStack,
     Image,
@@ -17,12 +18,11 @@ import {
 
 function Glitches() {
     return (
-        <Stack
+        <Stack>
+        <Box
             h={{
-                sm: '100vh',
-                lg: '100vh'
-            }}
-            w='100%'
+                    sm: '100vh'
+                }}
         >
             <HStack
                 h='20vh'
@@ -34,7 +34,6 @@ function Glitches() {
             <VStack
             w='100%'
             h={{
-                sm: '100vh',
                 md: '85vh',
                 lg: '75vh'
             }}
@@ -56,9 +55,10 @@ function Glitches() {
                 <Image src={Sixth} alt='sixth' />
             </GridItem>
             </Grid>
-
             </VStack>
-        </Stack>
+
+        </Box>
+    </Stack>
     )
 }
 
