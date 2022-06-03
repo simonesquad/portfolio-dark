@@ -75,6 +75,7 @@ function Dashboard() {
             <Box 
                 marginLeft={{
                     sm: '12vw',
+                    md: '11vw',
                     lg: '10vw'
                 }}
             >
@@ -84,7 +85,10 @@ function Dashboard() {
                 h={{
                     lg: '25vh'
                 }}
-                marginLeft='3vw'
+                marginLeft={{
+                    md: '4vw',
+                    lg: '3vw'
+                }}
                 align='right'
                 lineHeight='tall'
             >
