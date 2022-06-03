@@ -106,9 +106,9 @@ function Words() {
             </VStack>
 
             {isMobile ? 
-            <Vertical />
-            :
-            <Horizontal />
+                <Vertical />
+                :
+                <Horizontal />
             }
 
             <VStack
