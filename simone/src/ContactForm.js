@@ -102,7 +102,7 @@ const ContactForm = () => {
                 lg: '12%' 
             }}
             marginLeft={{
-                base: '28%',
+                base: '26%',
                 md: '31%',
                 lg: '35%'
             }}
