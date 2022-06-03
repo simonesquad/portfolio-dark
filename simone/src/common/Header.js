@@ -15,21 +15,22 @@ export default function Header({ onOpen, ...rest }) {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
     <Flex
-      px="4"
-      display="flex"
-      position="sticky"
-      top="0"
-      height="20"
-      zIndex="1"
+    //   px="4"
+    //   display="flex"
+    //   position="sticky"
+    //   top="0"
+    //   height="20"
+    //   width="100%"
+    //   zIndex="1"
       borderBottomWidth="1px"
       borderBottomColor="gray.200"
-      flexDirection="row"
-      {...rest}
+    //   flexDirection="row"
+    //   {...rest}
     >
-    <ButtonGroup
-        spacing='40'
+    {/* <ButtonGroup
+        spacing='0'
         marginTop='0.5vh'
-    >
+    > */}
     <Box p='4'>
     <IconButton
         onClick={onOpen}
@@ -48,7 +49,7 @@ export default function Header({ onOpen, ...rest }) {
             onClick={toggleColorMode}
         />
         </Box>
-        </ButtonGroup>
+        {/* </ButtonGroup> */}
     </Flex>
     );
 }
