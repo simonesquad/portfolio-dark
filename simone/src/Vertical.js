@@ -30,15 +30,15 @@ function Horizontal() {
                     lg: '70vh'
                 }}
             >
-            <Box
-                w='65vw'
-            >
+            <Box>
                 <Box
                     h={{
-                    sm: '20vh',
-                    md: '15vh',
-                    lg: '13vh'
-                }}
+                        sm: '25vh',
+                        md: '15vh',
+                        lg: '13vh'
+                    }}
+                    marginTop='3vh'
+
                 >
                 <Heading>Language is our key to all the worlds...</Heading>
                 
@@ -46,7 +46,7 @@ function Horizontal() {
 
                 <Box
                     h={{
-                    sm: '115vh',
+                    sm: '135vh',
                     md: '75vh',
                     lg: '57vh'
                     }}
@@ -55,27 +55,28 @@ function Horizontal() {
                 </Box>
                 <Spacer />
                 <Box
-                w='30vw'
-                marginLeft='7vw'
-            >
-            <Image 
-                src={Face} 
-                alt='mural'
-                h={{
-                    sm: '30vh',
-                    lg: '55vh'
-                }}
-                w={{
-                    sm: '25vw',
-                    lg: '20vw'
-                }}
-                borderRadius='50%'
-                />
-            </Box>
+                    w='50vw'
+                    marginLeft='15vw'
+                    >
+                    <Image 
+                        src={Face} 
+                        alt='mural'
+                        h={{
+                            sm: '40vh',
+                            lg: '55vh'
+                        }}
+                        w={{
+                            sm: '30vw',
+                            lg: '20vw'
+                        }}
+                        borderRadius='50%'
+                        />
+                    </Box>
             <Spacer />
+
                 <Box
                     h={{
-                        sm: '17vh',
+                        sm: '20vh',
                         md: '12vh',
                         lg:'10vh'
                     }}
