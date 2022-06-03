@@ -25,12 +25,14 @@ function Contact() {
             w='100%'
         >
             <Box
+                h={{
+                    sm: '100vh'
+                }}
                 w={{
-                    sm: '35vw',
+                    sm: '100%',
                     lg: '45vw'
                 }}
                 marginLeft={{
-                    sm: '25%',
                     lg: '27%'
                 }}
                 marginTop='10%'
