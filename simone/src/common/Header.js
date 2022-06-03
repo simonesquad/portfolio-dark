@@ -2,7 +2,6 @@ import React from 'react';
 import { FiMenu } from "react-icons/fi";
 
 import {
-    ButtonGroup,
     Flex,
     Spacer,
     Box,
@@ -15,22 +14,9 @@ export default function Header({ onOpen, ...rest }) {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
     <Flex
-    //   px="4"
-    //   display="flex"
-    //   position="sticky"
-    //   top="0"
-    //   height="20"
-    //   width="100%"
-    //   zIndex="1"
       borderBottomWidth="1px"
       borderBottomColor="gray.200"
-    //   flexDirection="row"
-    //   {...rest}
     >
-    {/* <ButtonGroup
-        spacing='0'
-        marginTop='0.5vh'
-    > */}
     <Box p='4'>
     <IconButton
         onClick={onOpen}
@@ -49,7 +35,6 @@ export default function Header({ onOpen, ...rest }) {
             onClick={toggleColorMode}
         />
         </Box>
-        {/* </ButtonGroup> */}
     </Flex>
     );
 }

@@ -99,18 +99,22 @@ const ContactForm = () => {
         <Box
             marginTop='12%' 
             marginLeft={{
-                sm: '50%',
                 md: '31%',
                 lg: '35%'
             }}
+            w='100%'
+            h='25vh'
         >
         <Button
             w={{
-                sm: '35vw',
+                sm: '25vw',
                 md: '21vw',
                 lg: '12vw'
             }}
-            h='6vh'
+            h={{
+                sm: '8vh',
+                lg: '6vh'
+            }}
             type="submit" 
         >
             Send
