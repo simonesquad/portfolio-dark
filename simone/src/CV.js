@@ -30,8 +30,12 @@ export default function CV() {
           align='center'
         >
         <VStack
-          h='117vh'
+          h={{
+            base: '110vh',
+            lg: '117vh'
+          }}
           w={{
+            base: '50vw',
             sm: '80vw',
             lg: '100vw'
           }}
