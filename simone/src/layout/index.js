@@ -9,7 +9,7 @@ import {
 
 export default function Layout({ children }) {
     
-    const [isMobile] = useMediaQuery('(max-width: 600px)')
+    const [isMobile] = useMediaQuery('(max-width: 375px)')
 
     return (
         <Box minH="100vh">
