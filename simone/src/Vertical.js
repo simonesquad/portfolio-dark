@@ -57,27 +57,6 @@ function Vertical() {
                 </Box>
                 <Spacer />
                 <Box
-                    h='45vh'
-                    w='50vw'
-                    marginLeft='15vw'
-                    >
-                    <Image 
-                        src={Face} 
-                        alt='mural'
-                        h={{
-                            sm: '40vh',
-                            lg: '55vh'
-                        }}
-                        w={{
-                            sm: '30vw',
-                            lg: '20vw'
-                        }}
-                        borderRadius='50%'
-                        />
-                    </Box>
-            <Spacer />
-
-                <Box
                     h={{
                         sm: '20vh',
                         md: '12vh',

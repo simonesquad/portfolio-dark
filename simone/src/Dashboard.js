@@ -14,7 +14,6 @@ import {
     Heading,
     Image,
     Stack,
-    Spacer,
     Text,
     VStack
 } from '@chakra-ui/react';
@@ -34,6 +33,7 @@ function Dashboard() {
         <VStack
             w='100%'
             h={{
+                base: '125vh',
                 sm: '120vh',
                 md: '100vh',
                 lg: '75vh'
@@ -60,11 +60,12 @@ function Dashboard() {
 
         <VStack
             w={{
-                sm: '75%',
+                sm: '100%',
                 md: '85%',
                 lg: '90%'
             }}
             h={{
+                base: '140vh',
                 sm: '120vh',
                 md: '95vh',
                 lg: '60vh'

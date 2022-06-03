@@ -18,13 +18,7 @@ import {
 
 function Glitches() {
     return (
-        <Stack>
-        <Box
-            h={{
-                    sm: '100vh'
-                }}
-            w='100%'
-        >
+        <Stack>     
             <HStack
                 h='20vh'
                 marginLeft='3vw'
@@ -35,6 +29,8 @@ function Glitches() {
             <VStack
             w='100%'
             h={{
+                base: '100vh',
+                sm: '100vh',
                 md: '85vh',
                 lg: '75vh'
             }}
@@ -57,8 +53,6 @@ function Glitches() {
             </GridItem>
             </Grid>
             </VStack>
-
-        </Box>
     </Stack>
     )
 }
