@@ -9,7 +9,6 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
-    "@mui/styles": "^5.14.13",
     "@react-pdf-viewer/core": "^2.7.1",
     "@react-pdf-viewer/default-layout": "^2.9.1",
     "@testing-library/jest-dom": "^5.11.4",
