@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { createRoot } from "react-dom/client";
+import Home from './Home';
 import { extendTheme, ChakraProvider } from '@chakra-ui/react';
 
 const colors = {
@@ -13,12 +13,14 @@ const colors = {
 
 const theme = extendTheme({ colors })
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
     <ChakraProvider>
-    <App />
+    <Home />
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById('root')
 );
 

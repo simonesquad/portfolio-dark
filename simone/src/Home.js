@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from "../src/layout/index";
+import Layout from "./layout/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Worker } from '@react-pdf-viewer/core';
 //Components
@@ -11,7 +11,7 @@ import Dashboard from './Dashboard';
 import Greeting from './common/Greeting';
 
 
-function App() {
+function Home() {
   return (
     <>
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

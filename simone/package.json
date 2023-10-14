@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.1.2",
+    "@chakra-ui/react": "^2.8.1",
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -17,7 +17,7 @@
     "axios": "^0.21.1",
     "emailjs": "^4.0.0",
     "emailjs-com": "^2.6.4",
-    "framer-motion": "^4.0.0",
+    "framer-motion": "^10.16.4",
     "pdfjs-dist": "^2.2.228",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
