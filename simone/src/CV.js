@@ -31,15 +31,14 @@ export default function CV() {
         >
         <VStack
           h={{
-            base: '110vh',
-            md: '120vh',
-            lg: '117vh'
+            base: '140vh',
+            sm: '130vh',
+            md: '135vh'
           }}
           w={{
             base: '70vw',
             sm: '80vw',
-            md: '100vw',
-            lg: '100vw'
+            md: '100vw'
           }}
         >
         <Document 
@@ -50,7 +49,11 @@ export default function CV() {
         </Document>
         </VStack>
         <HStack
-          h='15vh'
+          h={{
+            base: '10vh',
+            sm: '15vh',
+            md: '20vh'
+          }}
         >
         <Text>Download:</Text>
         <ButtonGroup>
