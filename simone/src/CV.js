@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { pdfjs, Document, Page } from 'react-pdf';
-import CVS from './document/S_B_.pdf';
+import CVS from './document/S_B_24_.pdf';
 import CV2 from './document/2020_SBallard_CV.pdf';
 
 
