@@ -27,10 +27,10 @@ const Footer = () => {
         >
         <Box
             w={{
-                base: '45vw',
+                base: '50vw',
                 sm: '25vw',
-                md: '20vw',
-                lg: '15vw',
+                md: '25vw',
+                lg: '25vw',
             }}
             marginLeft='3.2vw'
             marginTop='3.6vh'
@@ -39,7 +39,7 @@ const Footer = () => {
         </Box>
 
         <Box
-            marginLeft='15vw'
+            marginLeft='65vw'
         >
         <ButtonGroup 
             spacing={{

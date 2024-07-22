@@ -48,7 +48,8 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '50vh',
+                    base: '60vh',
+                    sm: '50vh',
                     md: '40vh',
                     lg: '45vh'
                 }}
@@ -67,7 +68,8 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '50vh',
+                    base: '60vh',
+                    sm: '50vh',
                     md: '40vh',
                     lg: '45vh'
                 }}
@@ -118,22 +120,26 @@ function Words() {
             {isMobile ? 
                 <Vertical />
                 :
+                <VStack 
+                    h='100vh'
+                >
                 <Horizontal />
+                </VStack>
             }
             </VStack>
 
             <VStack
-                h='60vh'
+                h='50vh'
                 w={{
-                    base: '80%',
-                    sm: '70%',
+                    base: '85%',
+                    sm: '80%',
                     md: '65%',
                     lg: '60%'
                 }}
             >
                 <Box
                     h={{
-                        sm: '32vh',
+                        sm: '35vh',
                         md: '35vh',
                         lg:'40vh'
                     }}
