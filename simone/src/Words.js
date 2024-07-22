@@ -86,9 +86,10 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '50vh',
-                    md: '65vh',
-                    lg: '75vh'
+                    base: '75vh',
+                    sm: '80vh',
+                    md: '85vh',
+                    lg: '100vh'
                 }}
                 marginLeft={{
                     sm: '3vw',
@@ -111,17 +112,22 @@ function Words() {
             </Box>
             </VStack>
 
+            <VStack
+                w='100%'
+            >
             {isMobile ? 
                 <Vertical />
                 :
                 <Horizontal />
             }
+            </VStack>
 
             <VStack
                 h='60vh'
                 w={{
                     base: '80%',
                     sm: '70%',
+                    md: '65%',
                     lg: '60%'
                 }}
             >

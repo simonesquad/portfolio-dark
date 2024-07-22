@@ -34,9 +34,9 @@ function Dashboard() {
             w='100%'
             h={{
                 base: '45vh',
-                sm: '75vh',
-                md: '70vh',
-                lg: '75vh'
+                sm: '70vh',
+                md: '75vh',
+                lg: '80vh'
             }}
         >
         <Grid templateColumns='repeat(5, 1fr)' gap={1.5}>
@@ -60,15 +60,16 @@ function Dashboard() {
 
         <VStack
             w={{
-                sm: '100%',
-                md: '100%',
+                base: '90%',
+                sm: '90%',
+                md: '90%',
                 lg: '90%'
             }}
             h={{
-                base: '75vh',
-                sm: '85vh',
-                md: '95vh',
-                lg: '80vh'
+                base: '60vh',
+                sm: '75vh',
+                md: '85vh',
+                lg: '90vh'
             }}
             align='right'
         >
@@ -78,7 +79,7 @@ function Dashboard() {
                     lg: '7vh'
                 }}
                 marginLeft={{
-                    sm: '12vw',
+                    sm: '2vw',
                     md: '3vw',
                     lg: '5vw'
                 }}
