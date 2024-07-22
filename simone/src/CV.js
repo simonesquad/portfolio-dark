@@ -31,14 +31,10 @@ export default function CV() {
         >
         <VStack
           h={{
-            base: '140vh',
-            sm: '130vh',
-            md: '135vh'
-          }}
-          w={{
-            base: '70vw',
-            sm: '80vw',
-            md: '100vw'
+            base: '170vh',
+            sm: '160vh',
+            md: '165vh',
+            lg: '175vh'
           }}
         >
         <Document 
@@ -48,11 +44,13 @@ export default function CV() {
         <Page pageNumber={pageNumber} />
         </Document>
         </VStack>
+
         <HStack
           h={{
-            base: '10vh',
-            sm: '15vh',
-            md: '20vh'
+            base: '25vh',
+            sm: '35vh',
+            md: '37vh',
+            lg: '40vh'
           }}
         >
         <Text>Download:</Text>

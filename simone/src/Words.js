@@ -29,7 +29,7 @@ function Words() {
             w='90%'
             h={{
                 md: '140vh',
-                lg: '130vh'
+                lg: '160vh'
             }}
             align='right'
             >
@@ -40,7 +40,7 @@ function Words() {
             <Box
                 h={{
                     md: '20vh',
-                    lg: '17vh'
+                    lg: '27vh'
                 }}
             >
             <Heading as='h1' size='2xl'>"If" - by Rudyard Kipling</Heading>
@@ -48,7 +48,7 @@ function Words() {
             <Box
                 h={{
                     md: '40vh',
-                    lg: '30vh'
+                    lg: '45vh'
                 }}
                 marginLeft={{
                     md: '9vw',
@@ -66,7 +66,7 @@ function Words() {
             <Box
                 h={{
                     md: '40vh',
-                    lg: '30vh'
+                    lg: '45vh'
                 }}
                 marginLeft={{
                     md: '10vw',
@@ -83,14 +83,16 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    md: '50vh',
-                    lg: '30vh'
+                    md: '55vh',
+                    lg: '60vh'
                 }}
                 marginLeft={{
                     sm: '3vw',
+                    md: '4vw'
                 }}
                 marginTop={{
-                    sm: '1vh'
+                    sm: '1vh',
+                    md: '2vhs'
                 }}
             >
             <Heading as='h3' size='lg' >If you can talk with crowds and keep your virtue,</Heading>   
@@ -112,7 +114,7 @@ function Words() {
             }
 
             <VStack
-                h='40vh'
+                h='60vh'
                 w={{
                     sm: '90%',
                     lg: '50%'
@@ -120,9 +122,9 @@ function Words() {
             >
                 <Box
                     h={{
-                        base: '30vh',
+                        sm: '32vh',
                         md: '35vh',
-                        lg:'30vh'
+                        lg:'40vh'
                     }}
                     marginLeft='7vw'
                     marginTop='10vh'
