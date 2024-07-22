@@ -28,15 +28,19 @@ const Footer = () => {
         <Box
             w={{
                 base: '45vw',
-                sm: '30vw',
-                md: '22vw',
-                lg: '20vw',
+                sm: '25vw',
+                md: '20vw',
+                lg: '15vw',
             }}
             marginLeft='3.2vw'
             marginTop='3.6vh'
         >
         <Text>simoneballard.com</Text>
         </Box>
+
+        <Box
+            marginLeft='15vw'
+        >
         <ButtonGroup 
             spacing={{
                 base: '0',
@@ -63,6 +67,7 @@ const Footer = () => {
             />
             </a> 
         </ButtonGroup>
+        </Box>
         </Flex>
     )
 }
