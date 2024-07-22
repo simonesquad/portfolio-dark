@@ -27,12 +27,12 @@ const Footer = () => {
         >
         <Box
             w={{
-                base: '35vw',
-                sm: '22vw',
-                md: '18vw',
-                lg: '14vw',
+                base: '45vw',
+                sm: '30vw',
+                md: '22vw',
+                lg: '20vw',
             }}
-            marginLeft='3vw'
+            marginLeft='3.2vw'
             marginTop='3.6vh'
         >
         <Text>simoneballard.com</Text>
@@ -67,4 +67,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

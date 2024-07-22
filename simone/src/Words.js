@@ -39,6 +39,7 @@ function Words() {
             >
             <Box
                 h={{
+                    base: '15vh',
                     md: '20vh',
                     lg: '27vh'
                 }}
@@ -47,6 +48,7 @@ function Words() {
             </Box>
             <Box
                 h={{
+                    base: '50vh',
                     md: '40vh',
                     lg: '45vh'
                 }}
@@ -65,6 +67,7 @@ function Words() {
             </Box>
             <Box
                 h={{
+                    base: '50vh',
                     md: '40vh',
                     lg: '45vh'
                 }}
@@ -83,8 +86,9 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    md: '55vh',
-                    lg: '60vh'
+                    base: '50vh',
+                    md: '65vh',
+                    lg: '75vh'
                 }}
                 marginLeft={{
                     sm: '3vw',
@@ -116,8 +120,9 @@ function Words() {
             <VStack
                 h='60vh'
                 w={{
-                    sm: '90%',
-                    lg: '50%'
+                    base: '80%',
+                    sm: '70%',
+                    lg: '60%'
                 }}
             >
                 <Box
