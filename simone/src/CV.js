@@ -34,7 +34,7 @@ export default function CV() {
             base: '170vh',
             sm: '160vh',
             md: '165vh',
-            lg: '175vh'
+            lg: '165vh'
           }}
         >
         <Document 
