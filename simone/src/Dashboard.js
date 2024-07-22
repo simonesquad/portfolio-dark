@@ -65,7 +65,7 @@ function Dashboard() {
                 lg: '90%'
             }}
             h={{
-                base: '85vh',
+                base: '75vh',
                 sm: '80vh',
                 md: '95vh',
                 lg: '60vh'

@@ -28,7 +28,7 @@ const Footer = () => {
         <Box
             w={{
                 base: '35vw',
-                sm: '30vw',
+                sm: '22vw',
                 md: '18vw',
                 lg: '14vw',
             }}
