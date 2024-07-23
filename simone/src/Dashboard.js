@@ -36,7 +36,7 @@ function Dashboard() {
                 base: '45vh',
                 sm: '70vh',
                 md: '75vh',
-                lg: '80vh'
+                lg: '90vh'
             }}
         >
         <Grid templateColumns='repeat(5, 1fr)' gap={1.5}>
@@ -66,7 +66,7 @@ function Dashboard() {
                 lg: '90%'
             }}
             h={{
-                base: '75vh',
+                base: '100vh',
                 sm: '75vh',
                 md: '85vh',
                 lg: '90vh'
