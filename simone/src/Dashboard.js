@@ -66,7 +66,7 @@ function Dashboard() {
                 lg: '90%'
             }}
             h={{
-                base: '100vh',
+                base: '75vh',
                 sm: '75vh',
                 md: '85vh',
                 lg: '90vh'
@@ -87,10 +87,6 @@ function Dashboard() {
             <Heading>The journey is real:</Heading>
             </Box>
             <Box
-                h={{
-
-                    lg: '25vh'
-                }}
                 w={{
                     md: '95vw',
                     lg: '95vw'

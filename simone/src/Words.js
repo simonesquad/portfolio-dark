@@ -28,6 +28,7 @@ function Words() {
             <VStack
             w='90%'
             h={{
+                base: '250vh',
                 md: '140vh',
                 lg: '160vh'
             }}
@@ -48,7 +49,7 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '60vh',
+                    base: '70vh',
                     sm: '50vh',
                     md: '40vh',
                     lg: '45vh'
@@ -68,7 +69,7 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '60vh',
+                    base: '70vh',
                     sm: '50vh',
                     md: '40vh',
                     lg: '45vh'
@@ -88,7 +89,7 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '75vh',
+                    base: '85vh',
                     sm: '80vh',
                     md: '85vh',
                     lg: '100vh'
@@ -127,6 +128,19 @@ function Words() {
                 <Horizontal />
                 </VStack>
             }
+
+            <Box
+                    h={{
+                        base: '25vh',
+                        sm: '24vh',
+                        md: '22vh',
+                        lg:'20vh'
+                    }}
+                >
+                <Heading as='h2' size='lg' >Your story is your legacy,
+                </Heading> 
+                <Heading as='h2' size='lg' >make it a good one.</Heading>
+                </Box>
             </VStack>
 
             <VStack
