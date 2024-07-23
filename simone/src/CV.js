@@ -31,10 +31,10 @@ export default function CV() {
         >
         <VStack
           h={{
-            base: '170vh',
-            sm: '160vh',
-            md: '165vh',
-            lg: '165vh'
+            base: '165vh',
+            sm: '155vh',
+            md: '160vh',
+            lg: '155vh'
           }}
         >
         <Document 

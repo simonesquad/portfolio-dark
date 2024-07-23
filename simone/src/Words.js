@@ -121,7 +121,8 @@ function Words() {
                 <Vertical />
                 :
                 <VStack 
-                    h='100vh'
+                    w='100%'
+                    marginTop='10vh'
                 >
                 <Horizontal />
                 </VStack>
