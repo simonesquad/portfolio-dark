@@ -39,7 +39,7 @@ const Footer = () => {
         </Box>
 
         <Box
-            marginLeft='5vw'
+            marginLeft='2.5vw'
         >
         <ButtonGroup 
             spacing={{
