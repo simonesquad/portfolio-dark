@@ -25,7 +25,7 @@ function Words() {
 
     return (
         <Stack>
-            <VStack
+            {/* <VStack
                 w='92%'
                 h={{
                     base: '470vh',
@@ -33,7 +33,7 @@ function Words() {
                     md: '300vh',
                     lg: '250vh'
                 }}
-            >
+            > */}
             <VStack
                 w='100%'
                 align='right'
@@ -179,10 +179,10 @@ function Words() {
                 </Box>
                 </Box>
             </VStack>
-        </VStack>
+        {/* </VStack> */}
 
         </Stack>
     )
 }
 
-export default Words
+export default Words;
