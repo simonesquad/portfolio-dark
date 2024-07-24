@@ -85,4 +85,4 @@ function Horizontal() {
     )
 }
 
-export default Horizontal
+export default Horizontal;
