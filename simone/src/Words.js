@@ -26,13 +26,17 @@ function Words() {
     return (
         <Stack>
             <VStack
-            w='90%'
-            h={{
-                base: '250vh',
-                md: '140vh',
-                lg: '160vh'
-            }}
-            align='right'
+                w='100%'
+                h={{
+                    base: '320vh',
+                    sm: '310vh',
+                    md: '300vh',
+                    lg: '290vh'
+                }}
+            >
+            <VStack
+                w='100%'
+                align='right'
             >
             <Box 
                 marginLeft='7vw'
@@ -41,7 +45,8 @@ function Words() {
             <Box
                 h={{
                     base: '15vh',
-                    md: '20vh',
+                    sm: '18vh',
+                    md: '22vh',
                     lg: '27vh'
                 }}
             >
@@ -49,9 +54,9 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '70vh',
-                    sm: '50vh',
-                    md: '40vh',
+                    base: '80vh',
+                    sm: '60vh',
+                    md: '50vh',
                     lg: '45vh'
                 }}
                 marginLeft={{
@@ -59,7 +64,7 @@ function Words() {
                     lg: '9vw'
                 }}
                 marginTop={{
-                    sm: '2vh'
+                    sm: '5vh'
                 }}
             >
             <Heading as='h1' size='2xl' >If you can make one heap of all your winnings</Heading>
@@ -69,9 +74,9 @@ function Words() {
             </Box>
             <Box
                 h={{
-                    base: '70vh',
-                    sm: '50vh',
-                    md: '40vh',
+                    base: '80vh',
+                    sm: '60vh',
+                    md: '50vh',
                     lg: '45vh'
                 }}
                 marginLeft={{
@@ -79,7 +84,7 @@ function Words() {
                     lg: '13vw'
                 }}
                 marginTop={{
-                    md: '1vh'
+                    md: '5vh'
                 }}
             >
             <Heading as='h3' size='lg' >If you can force your heart and nerve and sinew</Heading>
@@ -99,8 +104,8 @@ function Words() {
                     md: '4vw'
                 }}
                 marginTop={{
-                    sm: '1vh',
-                    md: '2vhs'
+                    sm: '4vh',
+                    md: '5vh'
                 }}
             >
             <Heading as='h3' size='lg' >If you can talk with crowds and keep your virtue,</Heading>   
@@ -114,12 +119,15 @@ function Words() {
             </Box>
             </Box>
             </VStack>
+           
 
             <VStack
                 w='100%'
             >
             {isMobile ? 
+            <VStack>
                 <Vertical />
+            </VStack>
                 :
                 <VStack 
                     w='100%'
@@ -144,7 +152,6 @@ function Words() {
             </VStack>
 
             <VStack
-                h='50vh'
                 w={{
                     base: '85%',
                     sm: '80%',
@@ -171,6 +178,8 @@ function Words() {
                 </Box>
                 </Box>
             </VStack>
+        </VStack>
+
         </Stack>
     )
 }
