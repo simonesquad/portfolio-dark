@@ -32,9 +32,9 @@ function Dashboard() {
         <Stack>
         <VStack
             h={{
-                base: '175vh',
-                sm: '165vh',
-                md: '160vh',
+                base: '185vh',
+                sm: '175vh',
+                md: '165vh',
                 lg: '155vh'
             }}
       >

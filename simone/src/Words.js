@@ -26,12 +26,12 @@ function Words() {
     return (
         <Stack>
             <VStack
-                w='100%'
+                w='92%'
                 h={{
-                    base: '320vh',
-                    sm: '310vh',
-                    md: '300vh',
-                    lg: '290vh'
+                    base: '420vh',
+                    sm: '410vh',
+                    md: '400vh',
+                    lg: '390vh'
                 }}
             >
             <VStack
