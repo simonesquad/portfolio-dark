@@ -24,17 +24,13 @@ function Vertical() {
     return(
 
         <VStack
-                w='80%'
+                w='82%'
             >
             <Box
-                marginLeft='7vw'
+                marginLeft='5vw'
             >
                 <Box
-                    h={{
-                        base: '25vh',
-                        sm: '30vh'
-                    }}
-                    marginTop='3vh'
+                    marginTop='3.5svh'
                 >
                 <Heading>Language is our key to all the worlds...</Heading>
 
@@ -51,8 +47,8 @@ function Vertical() {
                     <Image 
                     src={Face} 
                     alt='mural'
-                    h='40vh'
-                    w='30vw'
+                    h='39vh'
+                    w='32vw'
                     borderRadius='50%'
                     />
                 </Box>

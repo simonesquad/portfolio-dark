@@ -31,6 +31,14 @@ function Dashboard() {
     return (
         <Stack>
         <VStack
+            h={{
+                base: '175vh',
+                sm: '165vh',
+                md: '160vh',
+                lg: '155vh'
+            }}
+      >
+        <VStack
             w='100%'
             h={{
                 base: '45vh',
@@ -65,12 +73,6 @@ function Dashboard() {
                 md: '90%',
                 lg: '90%'
             }}
-            h={{
-                base: '75vh',
-                sm: '75vh',
-                md: '85vh',
-                lg: '90vh'
-            }}
             align='right'
         >
             <Box 
@@ -88,7 +90,7 @@ function Dashboard() {
             </Box>
             <Box
                 w={{
-                    md: '95vw',
+                    md: '90vw',
                     lg: '95vw'
                 }}
                 align='right'
@@ -97,8 +99,9 @@ function Dashboard() {
                 <Text>hello again friends, I find myself entering the new era and decade with a even more determination that a <Heading as='h5' size='lg'>better world is possible.</Heading> I was fortunate enough to receive a world class education both inside and outside of the classroom that was full of breathtaking <Heading as='h6' size='sm'>adventure.</Heading> While I am still an agent for change always fighting for <Heading as='h5' size='md'>greater transparency and individual empowerment,</Heading> I took a long break from my communications and consulting role in climate to dive into full stack web development - which has led me down a very interesting rabbit hole. I am emerging from this epoch with my sharpest set of skills ever: <Heading as='h4' size='lg'>analysis, communications, programming,</Heading> and a wicked sense of humor to get through it all. I sincerely hope we get to work together at some point - <Heading as='h6' size='md'>and thank you for visiting!</Heading></Text>
             </Box>
         </VStack>
+        </VStack>
     </Stack>
     )
 }
 
-export default Dashboard
+export default Dashboard;
