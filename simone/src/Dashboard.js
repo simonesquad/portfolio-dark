@@ -78,12 +78,12 @@ function Dashboard() {
             <Box 
                 h={{
                     md: '10vh',
-                    lg: '7vh'
+                    lg: '10vh'
                 }}
                 marginLeft={{
                     sm: '2vw',
                     md: '3vw',
-                    lg: '5vw'
+                    lg: '3vw'
                 }}
             >
             <Heading>The journey is real:</Heading>
@@ -91,7 +91,7 @@ function Dashboard() {
             <Box
                 w={{
                     md: '90vw',
-                    lg: '95vw'
+                    lg: '90vw'
                 }}
                 align='right'
                 lineHeight='tall'
