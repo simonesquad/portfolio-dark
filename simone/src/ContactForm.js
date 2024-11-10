@@ -31,8 +31,8 @@ const ContactForm = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         send(
-            'service_jqkz3qr',
-            'template_kqymnmk',
+            'service_g41xp9p',
+            'template_zveqwp8',
             toSend,
             'user_jMWnlaeLAc6VuXUX6i7eh'
         )
