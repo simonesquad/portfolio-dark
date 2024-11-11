@@ -1,9 +1,11 @@
 import React from 'react'
+import Peace from '../assets/fifth.jpg';
 
 import {
     Box,
     Heading,
-    Text
+    Text,
+    Image
 } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
@@ -17,7 +19,7 @@ const breakpoints = createBreakpoints({
 
 const Greeting = () => {
   return (
-    <Box w='100vw' h='70vh'>
+    <Box w='100vw'>
         <Box 
           w={{
             sm: '79vw',
@@ -31,10 +33,13 @@ const Greeting = () => {
             sm: '12vh',
             lg: '9vh'
           }}>
-            <Heading>Thank You for Your Message</Heading>
+            <Heading>Thank You for Your Outreach ...</Heading>
           </Box>
-            <Text>I am wandering the world somewhere lost in code and words. But also I will get back to you shortly!</Text>
-        </Box>
+            <Text>I will try and respond in a timely manner. In the meantime, feel free to connect in other corners of the metaverse, best Simone&</Text>
+            </Box>
+            <Image
+              src={Peace}
+            ></Image> 
     </Box>
   )
 }
